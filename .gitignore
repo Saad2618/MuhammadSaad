@@ -1,0 +1,14 @@
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.*
+.vscode/
+.idea/
+_generate_pages.py
+_generate_pages.mjs
+_render_assets.ps1
+_server.js
+_og.html
+_icon.html
+*.zip

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy | Muhammad Saad</title>
+  <meta name="description" content="How Muhammad Saad's portfolio handles contact details, the optional form provider, and analytics.">
+  <link rel="canonical" href="https://muhammadsaad.dev/privacy.html">
+  <meta name="theme-color" content="#0B1020">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem("saad-theme");
+        var theme = stored === "light" || stored === "dark" ? stored : (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+        document.documentElement.setAttribute("data-theme", theme);
+      } catch (error) {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+      if (location.protocol === "http:" || location.protocol === "https:") {
+        var manifestLink = document.createElement("link");
+        manifestLink.rel = "manifest";
+        manifestLink.href = /\/projects\//.test(location.pathname) ? "../site.webmanifest" : "site.webmanifest";
+        document.head.appendChild(manifestLink);
+      }
+      document.documentElement.classList.add("js");
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="brand" href="index.html#home">
+        <img src="assets/logo/logo-icon.svg" width="36" height="36" alt="">
+        <span><span class="brand__name">Muhammad Saad</span><span class="brand__mark">SAAD.DEV</span></span>
+      </a>
+      <div class="header-actions" style="margin-inline-start:auto">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to light theme">
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 14.5A8.5 8.5 0 1 1 9.5 3 7 7 0 0 0 21 14.5z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+        <a class="btn btn-primary" href="index.html#contact">Get a Free Quote</a>
+      </div>
+    </div>
+  </header>
+  <main id="main" class="wrap prose" style="padding-block:3rem 4rem">
+    <p class="crumbs"><a href="index.html">Home</a> / Privacy</p>
+    <h1>Privacy</h1>
+    <p>This is the personal professional site of Muhammad Saad, a senior full stack developer in Riyadh, Saudi Arabia. It is a static website. It has no database and no user accounts.</p>
+    <h2>What you send</h2>
+    <p>If you email, call, message on WhatsApp, or use LinkedIn, you are contacting Muhammad Saad through that service. Those companies process the message under their own policies once it leaves this site.</p>
+    <p>The contact form collects your name, email, optional company, project type, budget range, timeline, project description, and preferred contact method. A hidden field is included only to catch automated spam. Do not fill it.</p>
+    <h2>When the form is not connected</h2>
+    <p>Until a form endpoint is set in <code>assets/js/site-config.js</code>, the form does not transmit your message anywhere. It tells you that, and offers an email link instead. Nothing is stored by this website.</p>
+    <h2>When the form is connected</h2>
+    <p>The intended provider is Formspree. Submissions are sent from your browser to the endpoint you configure, then delivered to Muhammad Saad's email. The form identifier is public. No secret API key is placed in this site's JavaScript. Formspree's retention and processing terms apply to messages they receive. You can read them at <a href="https://formspree.io/legal/privacy-policy/" target="_blank" rel="noopener noreferrer">formspree.io</a>.</p>
+    <h2>Theme preference</h2>
+    <p>The site stores your light or dark theme choice in localStorage on your device. That value is not sent to a server.</p>
+    <h2>Fonts and analytics</h2>
+    <p>Inter and IBM Plex Mono are self-hosted. The site does not request Google Fonts. No analytics script is loaded. If analytics are added later, this page should be updated before that script is enabled. The switch lives in <code>site-config.js</code> as <code>analytics.enabled</code> and is not wired to a provider.</p>
+    <h2>Deletion</h2>
+    <p>To ask for a message you sent to be deleted, email <a href="mailto:msaaddeveloper1@gmail.com">msaaddeveloper1@gmail.com</a>. Muhammad Saad can delete it from his inbox. If the form provider still holds a copy, deletion there follows that provider's process.</p>
+    <p><a href="index.html">Return home</a></p>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-base">
+      <p>© <span data-year>2026</span> Muhammad Saad. All rights reserved.</p>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </footer>
+  <a class="float-wa" href="https://wa.me/966597899079" target="_blank" rel="noopener noreferrer" aria-label="Chat with Muhammad Saad on WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11 11 0 0 0 2.1 17.2L1 23l5.9-1.1A11 11 0 0 0 12 23a11 11 0 0 0 8.5-19.5zM12 21a9 9 0 0 1-4.6-1.3l-.3-.2-3.5.9.9-3.4-.2-.3A9 9 0 1 1 12 21z"/></svg>
+  </a>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

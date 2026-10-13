@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 96" role="img" aria-label="Muhammad Saad, Senior Full Stack Developer">
+  <defs>
+    <linearGradient id="ms-bg" x1="8" y1="12" x2="78" y2="84" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1E3A8A"/>
+      <stop offset="1" stop-color="#0B1020"/>
+    </linearGradient>
+    <linearGradient id="ms-s" x1="52" y1="28" x2="74" y2="70" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#67E8F9"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="16" width="64" height="64" rx="16" fill="url(#ms-bg)"/>
+  <rect x="9.25" y="17.25" width="61.5" height="61.5" rx="14.75" fill="none" stroke="#3B82F6" stroke-opacity=".7"/>
+  <path fill="#F8FAFC" d="M21 63V35h5.4l8.1 11.6L42.6 35H48v28h-4.8V47.2L35 56.4l-8.2-9.2V63H21z"/>
+  <path fill="none" stroke="url(#ms-s)" stroke-width="3.4" stroke-linecap="round" d="M52 38.5c5.6 0 8 2.8 8 6.2 0 3.6-2.8 5.6-7.2 6.4-4.2.8-6.3 2.4-6.3 5.6 0 3.4 2.8 6.1 8.2 6.1"/>
+  <circle cx="35" cy="56.4" r="2.1" fill="#22D3EE"/>
+  <circle cx="52" cy="38.5" r="2" fill="#A5F3FC"/>
+  <circle cx="54.7" cy="62.8" r="2" fill="#22D3EE"/>
+  <text x="92" y="48" fill="#F8FAFC" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="700">Muhammad Saad</text>
+  <text x="92" y="72" fill="#A8B3C7" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="1.4">SENIOR FULL STACK DEVELOPER</text>
+</svg>

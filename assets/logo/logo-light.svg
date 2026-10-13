@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 64" role="img" aria-label="Muhammad Saad">
+  <defs>
+    <linearGradient id="ms-bg" x1="4" y1="0" x2="56" y2="64" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1E3A8A"/>
+      <stop offset="1" stop-color="#0B1020"/>
+    </linearGradient>
+    <linearGradient id="ms-s" x1="40" y1="14" x2="58" y2="50" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#67E8F9"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+  </defs>
+  <rect width="56" height="56" y="4" rx="14" fill="url(#ms-bg)"/>
+  <rect x="1.1" y="5.1" width="53.8" height="53.8" rx="13" fill="none" stroke="#3B82F6" stroke-opacity=".7"/>
+  <path fill="#F8FAFC" d="M12 50V26h4.6l7 10L30.6 26H35v24h-4.1V36.6L24.5 44.4 17.6 36.6V50H12z"/>
+  <path fill="none" stroke="url(#ms-s)" stroke-width="3" stroke-linecap="round" d="M38.5 28c4.8 0 6.8 2.4 6.8 5.3 0 3.1-2.4 4.8-6.2 5.5-3.6.7-5.4 2-5.4 4.8 0 2.9 2.4 5.2 7 5.2"/>
+  <circle cx="24.5" cy="44.4" r="1.8" fill="#22D3EE"/>
+  <text x="70" y="40" fill="#0B1020" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="24" font-weight="700">Muhammad Saad</text>
+</svg>
