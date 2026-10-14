@@ -33,16 +33,6 @@
       githubSlot.appendChild(link);
     }
 
-    if (config.testimonials && config.testimonials.length && document.getElementById("testimonial-slot")) {
-      var slot = document.getElementById("testimonial-slot");
-      slot.className = "testimonial-list";
-      slot.innerHTML = config.testimonials.map(function (item) {
-        return (
-          '<figure class="testimonial"><blockquote>' + item.quote + "</blockquote><figcaption><strong>" +
-          item.name + "</strong> — " + item.role + "</figcaption></figure>"
-        );
-      }).join("");
-    }
 
     if (toggle && nav && header) {
       var label = toggle.querySelector(".sr-only");
@@ -164,7 +154,7 @@
             revealObserver.unobserve(entry.target);
           }
         });
-      }, { threshold: 0 });
+      }, { threshold: 0, rootMargin: "0px 0px -6% 0px" });
       reveals.forEach(function (node) { revealObserver.observe(node); });
     }
 

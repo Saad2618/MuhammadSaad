@@ -5,6 +5,10 @@
       a: "Custom web applications, ASP.NET Core APIs, Angular front ends, SQL Server work, authentication, cloud deployment, and improvements to an existing .NET or Angular codebase. A good fit is a business system that needs a senior engineer who can own the technical path from discussion to release."
     },
     {
+      q: "Do you work in stacks other than .NET and Angular?",
+      a: "Yes. C#, ASP.NET Core, Angular, and SQL Server are where my experience runs deepest, and that is where I would normally recommend starting. If your product already runs on another stack, such as Node.js, Python, Java, PHP, React, or Vue, I am open to building in it. We agree scope after a short technical conversation, and I will say plainly if a specialist in that stack would serve you better."
+    },
+    {
       q: "How much does a project cost, and how long does it take?",
       a: "Both depend on scope, integrations, and how finished the requirements are. A focused internal tool is a different engagement from a multi-module business system. After a short discovery conversation you receive a written estimate before any build starts. Published rates stay hidden until they are finalized in the site configuration."
     },

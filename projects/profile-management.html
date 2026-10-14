@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Profile Management System | Muhammad Saad</title>
   <meta name="description" content="A structured system for person and account profiles, so updates happen in one place and visibility follows a permission model.">
-  <meta name="theme-color" content="#0B1020">
+  <meta name="theme-color" content="#080920">
   <link rel="canonical" href="https://muhammadsaad.dev/projects/profile-management.html">
   <meta property="og:type" content="article">
   <meta property="og:title" content="Profile Management System | Muhammad Saad">
@@ -22,7 +22,7 @@
     (function () {
       try {
         var stored = localStorage.getItem("saad-theme");
-        var theme = stored === "light" || stored === "dark" ? stored : (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+        var theme = stored === "light" || stored === "dark" ? stored : "dark";
         document.documentElement.setAttribute("data-theme", theme);
       } catch (error) {
         document.documentElement.setAttribute("data-theme", "dark");
@@ -30,7 +30,7 @@
       if (location.protocol === "http:" || location.protocol === "https:") {
         var manifestLink = document.createElement("link");
         manifestLink.rel = "manifest";
-        manifestLink.href = /\/projects\//.test(location.pathname) ? "../site.webmanifest" : "site.webmanifest";
+        manifestLink.href = "../site.webmanifest";
         document.head.appendChild(manifestLink);
       }
       document.documentElement.classList.add("js");
@@ -40,21 +40,11 @@
   {
     "@context": "https://schema.org",
     "@graph": [
-      {
-        "@type": "WebPage",
-        "name": "Profile Management System",
-        "description": "A structured system for person and account profiles, so updates happen in one place and visibility follows a permission model.",
-        "url": "https://muhammadsaad.dev/projects/profile-management.html",
-        "author": { "@type": "Person", "name": "Muhammad Saad", "url": "https://muhammadsaad.dev/" }
-      },
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://muhammadsaad.dev/" },
-          { "@type": "ListItem", "position": 2, "name": "Projects", "item": "https://muhammadsaad.dev/#projects" },
-          { "@type": "ListItem", "position": 3, "name": "Profile Management System", "item": "https://muhammadsaad.dev/projects/profile-management.html" }
-        ]
-      }
+      { "@type": "WebPage", "name": "Profile Management System", "description": "A structured system for person and account profiles, so updates happen in one place and visibility follows a permission model.", "url": "https://muhammadsaad.dev/projects/profile-management.html", "author": { "@type": "Person", "name": "Muhammad Saad", "url": "https://muhammadsaad.dev/" } },
+      { "@type": "BreadcrumbList", "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://muhammadsaad.dev/" },
+        { "@type": "ListItem", "position": 2, "name": "Projects", "item": "https://muhammadsaad.dev/#projects" },
+        { "@type": "ListItem", "position": 3, "name": "Profile Management System", "item": "https://muhammadsaad.dev/projects/profile-management.html" } ] }
     ]
   }
   </script>
@@ -98,26 +88,16 @@
     <article class="wrap case">
       <header class="page-intro">
         <p class="crumbs"><a href="../index.html#home">Home</a> / <a href="../index.html#projects">Projects</a> / Profile Management System</p>
-        <p class="badge badge--professional">Professional Project</p>
+        <p class="badge-row"><span class="badge badge--professional">Professional Project</span><span class="badge">Enterprise</span></p>
         <h1>Profile Management System</h1>
         <p class="lede">Profile and account administration. A structured system for person and account profiles, so updates happen in one place and visibility follows a permission model.</p>
       </header>
       <div id="case-visual" data-project-id="profile-management"></div>
       <div class="case-grid">
-        <section class="case-block"><h2>Business need</h2><p>Profile data that is copied between teams drifts. People update one record and forget another, and nobody can say with confidence which version is current or who is allowed to change it.</p></section>
-        <section class="case-block"><h2>Technical approach</h2><p>The system treats a profile as a maintained record with a clear update path and role-based visibility. The goal is an application staff can search, correct, and trust, rather than a folder of exports.</p></section>
-        <section class="case-block"><h2>Key functionality</h2><ul>
-            <li>Profile records with search</li>
-            <li>Role-based visibility of sensitive fields</li>
-            <li>Controlled updates instead of ad-hoc edits</li>
-            <li>A structure that can retain a history of important changes</li>
-          </ul></section>
-        <section class="case-block"><h2>Technical focus</h2><ul class="pills">
-            <li>ASP.NET Core</li>
-            <li>Angular</li>
-            <li>SQL Server</li>
-            <li>REST APIs</li>
-          </ul></section>
+        <section class="case-block"><h2>The problem</h2><p>Profile data that is copied between teams drifts. People update one record and forget another, and nobody can say with confidence which version is current or who is allowed to change it.</p></section>
+        <section class="case-block"><h2>The solution</h2><p>The system treats a profile as a maintained record with a clear update path and role-based visibility. The goal is an application staff can search, correct, and trust, rather than a folder of exports.</p></section>
+        <section class="case-block"><h2>Key features</h2><ul><li>Profile records with search</li><li>Role-based visibility of sensitive fields</li><li>Controlled updates instead of ad-hoc edits</li><li>A structure that can retain a history of important changes</li></ul></section>
+        <section class="case-block case-block--value"><h2>Value delivered</h2><p>One trusted record per person instead of scattered spreadsheets.</p><h3>Strengths this project shows</h3><ul class="pills"><li>Full-stack development</li><li>System integration</li><li>Database design</li></ul></section>
       </div>
       <section class="case-block" style="margin-top:1rem"><h2>Outcome</h2><p>Verified outcome metrics are not published for this project. Figures, client logos, and production URLs are omitted until they are confirmed and approved for public use.</p></section>
       <div class="cta-band">
@@ -130,7 +110,7 @@
       <nav class="pager" aria-label="Other projects"><a class="text-link" href="empowerid.html">Previous: EmpowerID</a><a class="text-link" href="solidarity.html">Next: Solidarity</a></nav>
     </article>
   </main>
-  <footer class="site-footer">
+    <footer class="site-footer">
     <div class="wrap footer-grid">
       <div>
         <a class="brand" href="../index.html#home"><img src="../assets/logo/logo-icon.svg" width="36" height="36" alt=""><span class="brand__name">Muhammad Saad</span></a>
@@ -166,7 +146,7 @@
           <li><a href="tel:+966597899079">+966 59 789 9079</a></li>
           <li><a href="https://wa.me/966597899079" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
           <li><a href="https://www.linkedin.com/in/muhammad-saad-421217175/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-          <li id="github-slot">GitHub profile link forthcoming</li>
+          <li id="github-slot"><a href="https://github.com/Saad2618" target="_blank" rel="noopener noreferrer">GitHub</a></li>
         </ul>
       </div>
     </div>

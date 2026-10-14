@@ -2,7 +2,7 @@
 
 Static portfolio for Muhammad Saad, a senior full stack developer in Riyadh. The site is plain HTML, CSS, and JavaScript. It does not need a build step, a server, or a database.
 
-Open `index.html` in a browser to review the pages. The typefaces are embedded in the stylesheet, so they load from a file address, and the web manifest is attached only on http or https. Use a local static server when you test the contact form, because some browsers block `fetch` from `file://` addresses.
+Open `index.html` in a browser to review the pages. Use a local static server when you test the contact form, because some browsers block `fetch` from `file://` addresses.
 
 ```text
 npx serve .
@@ -21,13 +21,12 @@ The placeholder domain used in canonical links, Open Graph tags, `robots.txt`, a
 ## Replace before publication
 
 - Domain: search the project for `https://muhammadsaad.dev` and replace it with the real origin, including `sitemap.xml` and `robots.txt`.
-- GitHub: set `contact.github` in `assets/js/site-config.js` to a full `https://github.com/...` profile URL. Until then the footer shows “GitHub profile link forthcoming” and does not link to a placeholder.
+- GitHub: set to `https://github.com/Saad2618` in `assets/js/site-config.js` (`contact.github`) and in the footer and contact list of `index.html`.
 - Contact form: set `form.endpoint` in `assets/js/site-config.js`. Until that value is a real Formspree URL, the form validates locally and then explains that it is not connected. It will not show a success message for an unsent inquiry.
 - Pricing: replace the `[Add …]` strings in `pricing.models`, then set `pricing.showRates` to `true`. Rates that still start with `[Add` stay hidden.
 - Portrait: replace `assets/images/portrait.svg` with a photograph and update the alt text in `index.html`. The current image is an illustration, not a photo of Muhammad Saad.
 - Professional projects: confirm the technical focus and the wording on the five case studies before treating them as client-approved.
 - Employment: Euphoria XR lists the confirmed title. ArhamSoft, Vision Plus Solution, and AlphaCore Technology list dates only, plus a general description. Add official titles in `assets/js/experience.js` when you want them public.
-- Testimonials: add approved quotes to `testimonials` in `assets/js/site-config.js`. Empty means the discreet placeholder stays. Do not invent reviews.
 - Analytics: leave `analytics.enabled` false until you choose a provider, then update `privacy.html` before any script loads.
 
 Do not add client logos, production URLs, certification claims, or performance numbers unless they are confirmed and approved.
@@ -36,14 +35,14 @@ Do not add client logos, production URLs, certification claims, or performance n
 
 | What | Where |
 | --- | --- |
-| Name, email, phone, WhatsApp, LinkedIn, GitHub, domain, form endpoint, pricing, testimonials | `assets/js/site-config.js` |
+| Name, email, phone, WhatsApp, LinkedIn, GitHub, domain, form endpoint, pricing | `assets/js/site-config.js` |
 | Service cards | `assets/js/services.js` |
-| Project catalog and card mockups | `assets/js/projects.js` |
+| Project catalog, case studies, banners | `tools/projects_data.py`, then run `python3 tools/build_site.py` |
 | Experience timeline | `assets/js/experience.js` |
 | FAQ answers and FAQ structured data | `assets/js/faqs.js` |
 | Colors and layout | `assets/css/styles.css` |
 | Hero, about narrative, process, technology groups, contact form fields | `index.html` |
-| Case study pages | `projects/*.html` |
+| Case study pages | generated into `projects/*.html` by the build script |
 
 Contact details also appear as visible fallbacks in the HTML (footer, contact links, privacy page). If you change an email or phone number, update `site-config.js` and search the HTML for the old value.
 
@@ -51,15 +50,14 @@ Contact details also appear as visible fallbacks in the HTML (footer, contact li
 
 ### Add a project
 
-1. Add an object to `window.PORTFOLIO` in `assets/js/projects.js`.
-2. Set `status` to `professional`, `demo`, or `concept`, and set `statusLabel` to `Professional Project`, `Demo Project`, or `Concept Project`. Demo and concept work must stay labeled. Do not mark either as client work.
-3. Set `categories` using any of: `enterprise`, `saas`, `ai`, `automation`, `apis`, `analytics`.
-4. Set `layout` to one of: `dashboard`, `board`, `pipeline`, `kiosk`, `chat`, `doc`, `endpoints`.
-5. Set `page` to `projects/your-slug.html`.
-6. Duplicate an existing file in `projects/`, then change the title, description, canonical URL, breadcrumb, copy, and `data-project-id`.
-7. Add the new URL to `sitemap.xml`.
+All projects live in one file: `tools/projects_data.py`.
 
-The home page renders cards from `projects.js`. You do not need to edit the card layout in `index.html`.
+1. Add an entry to `NEW` (copy an existing one). Give it an `id`, title, summary, `categories` (`enterprise`, `saas`, `ai`, `automation`, `apis`, `analytics`, `remote`), tech `stack`, three card `feats`, a one-line `value`, the problem and solution text, key features, and a proposed architecture.
+2. Pick a `layout` for the banner artwork: `dashboard`, `board`, `pipeline`, `kiosk`, `chat`, `doc`, `endpoints`, `iam`, `profiles`, `policy`, `metro`, `cases`, `ai_chat_sources`, `billing`, `warehouse`, `calendar`, `school`, `booking`, `store`, `referral`, `feed`, `analytics`, `modernize`, `vault`, `tenants`, `recon`, `chatbot`, `support`, `docqa`, `aiinsight`, `kbsearch`, `resume`, `collab`, `website`, `cloud`, `globe_crm`, `portal`, or `phone`. Add a new drawer in `tools/visuals.py` if none fits, so every project keeps its own picture.
+3. Pick an `accent`: `cyan`, `blue`, `violet`, `teal`, `amber`, or `rose`.
+4. Run `python3 tools/build_site.py`. It rewrites `assets/js/projects.js`, every page in `projects/`, the banners, the no-JavaScript list on the home page, and `sitemap.xml`.
+
+Concept projects must stay labeled `Concept Project`. Never mark a concept as client work, and do not add client names, testimonials, or results that are not confirmed.
 
 ### Pricing visibility
 
@@ -92,7 +90,7 @@ Direct alternatives stay on the page: `mailto:msaaddeveloper1@gmail.com`, `tel:+
 
 ### Theme, language, and direction
 
-The first visit follows the system light or dark setting. The visitor’s later choice is stored under `saad-theme`.
+The site opens in the dark theme by default (the hero banner is designed for it). The visitor’s later choice is stored under `saad-theme`. To follow the system setting again, restore the `matchMedia` check in the inline theme script at the top of each page.
 
 English is the published locale. `assets/js/i18n/en.js` records that Arabic is planned. Layout CSS uses logical properties (`margin-inline`, `padding-inline`, `inset-inline`) so a future right-to-left version does not require a second stylesheet.
 
@@ -104,6 +102,19 @@ To add Arabic later:
 4. Add the Arabic URLs to the sitemap.
 
 Do not publish an empty Arabic switch before the pages exist.
+
+### Banner art
+
+All banner images are generated SVGs, so they stay sharp on any screen and weigh a few KB each.
+
+| File | Use |
+| --- | --- |
+| `assets/images/hero-banner.svg` | Hero background and the tagline banner |
+| `assets/images/projects/<id>.svg` | Project card banner (800 x 500) |
+| `assets/images/projects/<id>-wide.svg` | Case study page banner (1600 x 640) |
+| `assets/images/og-share.png` | Social share image (1200 x 630) |
+
+To change banner colors, edit `PALETTES` in `tools/make_banners.py`; to change a project's artwork, edit its drawer in `tools/visuals.py`. Run `python3 tools/build_site.py` afterwards. The banners are illustrations, not screenshots of client systems.
 
 ## Brand files
 
@@ -172,7 +183,7 @@ GitHub project sites are served from `/repository-name/` unless you use a user s
 - Logo, name, and “Senior Full Stack Developer” match on the home page, project pages, privacy page, and 404 page.
 - Layout checked at 360px, 768px, 1280px, and a wide desktop.
 - Mobile menu opens, closes, and moves focus. Escape closes it.
-- Theme toggle switches and survives a reload. A first visit with no saved choice follows the system theme.
+- Theme toggle switches and survives a reload. A first visit with no saved choice opens in the dark theme.
 - Each category filter and the professional/concept filter show the matching cards.
 - Every “View case study” link opens the correct file.
 - WhatsApp, email, phone, and LinkedIn URLs are correct.
@@ -185,4 +196,4 @@ GitHub project sites are served from `/repository-name/` unless you use a user s
 
 ## Stack
 
-HTML, CSS, and vanilla JavaScript. Self-hosted Inter and IBM Plex Mono (SIL Open Font License; see `assets/fonts/`).
+HTML, CSS, and vanilla JavaScript. Self-hosted Inter, IBM Plex Mono, and Bricolage Grotesque (SIL Open Font License; see `assets/fonts/`).

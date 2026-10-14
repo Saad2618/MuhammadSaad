@@ -121,44 +121,133 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://muhammadsaad.dev/projects/remote-sprint-workspace.html</loc>
-    <lastmod>2026-10-13</lastmod>
+    <loc>https://muhammadsaad.dev/projects/ai-chatbot.html</loc>
+    <lastmod>2026-10-14</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://muhammadsaad.dev/projects/client-delivery-portal.html</loc>
-    <lastmod>2026-10-13</lastmod>
+    <loc>https://muhammadsaad.dev/projects/ai-customer-support.html</loc>
+    <lastmod>2026-10-14</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://muhammadsaad.dev/projects/enterprise-procurement.html</loc>
-    <lastmod>2026-10-13</lastmod>
+    <loc>https://muhammadsaad.dev/projects/ai-document-assistant.html</loc>
+    <lastmod>2026-10-14</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://muhammadsaad.dev/projects/multisite-operations.html</loc>
-    <lastmod>2026-10-13</lastmod>
+    <loc>https://muhammadsaad.dev/projects/ai-analytics-dashboard.html</loc>
+    <lastmod>2026-10-14</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://muhammadsaad.dev/projects/saas-onboarding.html</loc>
-    <lastmod>2026-10-13</lastmod>
+    <loc>https://muhammadsaad.dev/projects/ai-knowledge-base.html</loc>
+    <lastmod>2026-10-14</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://muhammadsaad.dev/projects/ai-support-triage.html</loc>
-    <lastmod>2026-10-13</lastmod>
+    <loc>https://muhammadsaad.dev/projects/ai-resume-analyzer.html</loc>
+    <lastmod>2026-10-14</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://muhammadsaad.dev/projects/ai-requirements-assistant.html</loc>
-    <lastmod>2026-10-13</lastmod>
+    <loc>https://muhammadsaad.dev/projects/remote-collaboration.html</loc>
+    <lastmod>2026-10-14</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://muhammadsaad.dev/projects/service-business-suite.html</loc>
-    <lastmod>2026-10-13</lastmod>
+    <loc>https://muhammadsaad.dev/projects/international-business-website.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://muhammadsaad.dev/projects/agency-client-portal.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://muhammadsaad.dev/projects/cloud-enterprise-management.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://muhammadsaad.dev/projects/multi-region-crm.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://muhammadsaad.dev/projects/field-service-mobile.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://muhammadsaad.dev/projects/clinic-management.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://muhammadsaad.dev/projects/real-estate-platform.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://muhammadsaad.dev/projects/fleet-tracking.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://muhammadsaad.dev/projects/restaurant-ordering.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://muhammadsaad.dev/projects/online-learning-platform.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://muhammadsaad.dev/projects/invoicing-system.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://muhammadsaad.dev/projects/event-ticketing.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://muhammadsaad.dev/projects/expense-approvals.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://muhammadsaad.dev/projects/erp-system.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://muhammadsaad.dev/projects/hr-payroll-system.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://muhammadsaad.dev/projects/accounting-ledger.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://muhammadsaad.dev/projects/procurement-management.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://muhammadsaad.dev/projects/pos-retail.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://muhammadsaad.dev/projects/production-planning.html</loc>
+    <lastmod>2026-10-14</lastmod>
     <priority>0.6</priority>
   </url>
 </urlset>
-

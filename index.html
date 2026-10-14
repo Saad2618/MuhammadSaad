@@ -6,7 +6,7 @@
   <title>Muhammad Saad | Full Stack Developer</title>
   <meta name="description" content="Senior full stack developer in Riyadh. Muhammad Saad builds secure web applications with ASP.NET Core, Angular, and SQL Server for businesses, startups, and agencies.">
   <meta name="author" content="Muhammad Saad">
-  <meta name="theme-color" content="#0B1020">
+  <meta name="theme-color" content="#080920">
   <link rel="canonical" href="https://muhammadsaad.dev/">
   <link rel="alternate" hreflang="en" href="https://muhammadsaad.dev/">
   <meta property="og:type" content="website">
@@ -31,18 +31,12 @@
     (function () {
       try {
         var stored = localStorage.getItem("saad-theme");
-        var theme = stored === "light" || stored === "dark" ? stored : (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+        var theme = stored === "light" || stored === "dark" ? stored : "dark";
         document.documentElement.setAttribute("data-theme", theme);
         var meta = document.querySelector('meta[name="theme-color"]');
-        if (meta) meta.setAttribute("content", theme === "light" ? "#F8FAFC" : "#0B1020");
+        if (meta) meta.setAttribute("content", theme === "light" ? "#F7F5FF" : "#080920");
       } catch (error) {
         document.documentElement.setAttribute("data-theme", "dark");
-      }
-      if (location.protocol === "http:" || location.protocol === "https:") {
-        var manifestLink = document.createElement("link");
-        manifestLink.rel = "manifest";
-        manifestLink.href = /\/projects\//.test(location.pathname) ? "../site.webmanifest" : "site.webmanifest";
-        document.head.appendChild(manifestLink);
       }
       document.documentElement.classList.add("js");
     })();
@@ -128,9 +122,10 @@
 
   <main id="main">
     <section class="hero" id="home">
+      <div class="hero-art" aria-hidden="true"><img src="assets/images/hero-banner.svg" alt="" width="1920" height="1000" fetchpriority="high"></div>
       <div class="wrap hero-grid">
-        <div>
-          <p class="kicker"><span>SAAD.DEV</span> Senior Full Stack Developer</p>
+        <div class="hero-copy">
+         <p class="kicker"><span>SAAD.DEV</span> Senior Full Stack Developer</p>
           <h1>I Build Secure, Scalable Web Applications That Grow Your Business.</h1>
           <p class="lede">I help businesses, startups, and software agencies turn complex ideas into reliable digital products. From .NET backend engineering to Angular interfaces and cloud integrations, I deliver practical software solutions built for long-term growth.</p>
           <div class="hero-actions">
@@ -143,34 +138,27 @@
           </div>
         </div>
         <div class="hero-visual">
-          <div class="console" aria-hidden="true">
-            <div class="console__bar"><span></span><span></span><span></span><strong>Sample interface</strong></div>
-            <div class="console__body">
-              <aside>
-                <b class="is-on">Overview</b>
-                <b>Access</b>
-                <b>Reviews</b>
-                <b>Releases</b>
-              </aside>
-              <div class="console__main">
-                <div class="console__stats">
-                  <p><small>Open</small><strong>18</strong></p>
-                  <p><small>Review</small><strong>06</strong></p>
-                  <p><small>Ready</small><strong>12</strong></p>
-                </div>
-                <div class="console__chart">
-                  <i style="--h:42%"></i><i style="--h:68%"></i><i style="--h:50%"></i><i style="--h:86%"></i><i style="--h:60%"></i><i style="--h:74%"></i><i style="--h:58%"></i>
-                </div>
-                <ul class="console__log">
-                  <li><em>GET</em> /api/access/reviews <span>200</span></li>
-                  <li><em>POST</em> /api/roles/assign <span>201</span></li>
-                  <li><em>GET</em> /api/audit/latest <span>200</span></li>
-                </ul>
-              </div>
-            </div>
+          <div class="glass code-card" aria-hidden="true">
+            <div class="code-card__bar"><i></i><i></i><i></i><strong>AccessController.cs</strong></div>
+<pre><span class="m">[Authorize(Roles = </span><span class="s">"Admin"</span><span class="m">)]</span>
+<span class="m">[HttpPost(</span><span class="s">"roles/assign"</span><span class="m">)]</span>
+<span class="k">public async</span> <span class="t">Task</span>&lt;<span class="t">IActionResult</span>&gt; Assign(<span class="t">AssignRole</span> cmd)
+{
+    <span class="c">// validate, authorize, persist</span>
+    <span class="k">await</span> _access.AssignAsync(cmd);
+    <span class="k">return</span> Created();
+}</pre>
           </div>
-          <p class="console-caption">Illustrative product interface. Not a client system, and not a performance claim.</p>
-          <figure class="portrait">
+          <div class="hero-row" aria-hidden="true">
+            <div class="glass status-card">
+              <p><em>GET</em> /api/access/reviews <b>200</b></p>
+              <p><em>POST</em> /api/roles/assign <b>201</b></p>
+              <p><em>GET</em> /api/audit/latest <b>200</b></p>
+            </div>
+            <div class="glass stack-chips"><span>ASP.NET Core</span><span>Angular</span><span>SQL Server</span><span>Azure</span></div>
+          </div>
+          <p class="console-caption">Illustrative interface. Not a client system, and not a performance claim.</p>
+          <figure class="glass portrait">
             <img src="assets/images/portrait.svg" width="64" height="64" alt="Illustrated portrait placeholder for Muhammad Saad. Replace with a professional photograph.">
             <figcaption>
               <strong>Muhammad Saad</strong>
@@ -191,7 +179,7 @@
     <section class="section reveal" id="services">
       <div class="wrap">
         <div class="section-head">
-          <p class="kicker"><span>01</span> Services</p>
+          <p class="kicker">Services</p>
           <h2>Senior engineering for software that has to keep working.</h2>
           <p class="lede">Practical delivery for companies that need a full stack developer in Riyadh, a freelance .NET developer for a defined build, or a remote engineer who can join an existing team. The work stays tied to a business outcome, not a pile of disconnected tickets.</p>
         </div>
@@ -217,20 +205,20 @@
       </div>
     </section>
 
-    <section class="section reveal" id="why">
+    <section class="section section--tint reveal" id="why">
       <div class="wrap">
         <div class="section-head">
-          <p class="kicker"><span>02</span> Why choose me</p>
+          <p class="kicker">Why choose me</p>
           <h2>One engineer who stays with the problem.</h2>
           <p class="lede">Clients hire Muhammad Saad when they want technical ownership without handing the product to a rotating cast of generalists.</p>
         </div>
         <div class="why-grid">
-          <article class="why-card"><span>01</span><h3>End-to-end technical ownership</h3><p>From the first technical conversation through backend, interface, data, and deployment, the same person can hold the thread.</p></article>
-          <article class="why-card"><span>02</span><h3>Maintainable architecture</h3><p>Boundaries, patterns, and naming that let the next feature land without a rewrite six months later.</p></article>
-          <article class="why-card"><span>03</span><h3>Performance-focused engineering</h3><p>Queries, payloads, and interface responsiveness are treated as product quality, not a cleanup phase nobody schedules.</p></article>
-          <article class="why-card"><span>04</span><h3>Clear communication</h3><p>Progress in plain language for founders and managers, with the technical detail ready when your team wants it.</p></article>
-          <article class="why-card"><span>05</span><h3>Structured Agile delivery</h3><p>Short cycles, visible software, and scope that stays attached to the business priority you actually signed up for.</p></article>
-          <article class="why-card"><span>06</span><h3>Reliable documentation and handover</h3><p>The knowledge required to run and change the system is written down, so it does not leave when the engagement does.</p></article>
+          <article class="why-card"><h3>End-to-end technical ownership</h3><p>From the first technical conversation through backend, interface, data, and deployment, the same person can hold the thread.</p></article>
+          <article class="why-card"><h3>Maintainable architecture</h3><p>Boundaries, patterns, and naming that let the next feature land without a rewrite six months later.</p></article>
+          <article class="why-card"><h3>Performance-focused engineering</h3><p>Queries, payloads, and interface responsiveness are treated as product quality, not a cleanup phase nobody schedules.</p></article>
+          <article class="why-card"><h3>Clear communication</h3><p>Progress in plain language for founders and managers, with the technical detail ready when your team wants it.</p></article>
+          <article class="why-card"><h3>Structured Agile delivery</h3><p>Short cycles, visible software, and scope that stays attached to the business priority you actually signed up for.</p></article>
+          <article class="why-card"><h3>Reliable documentation and handover</h3><p>The knowledge required to run and change the system is written down, so it does not leave when the engagement does.</p></article>
         </div>
       </div>
     </section>
@@ -238,9 +226,9 @@
     <section class="section reveal" id="projects">
       <div class="wrap">
         <div class="section-head">
-          <p class="kicker"><span>03</span> Projects</p>
-          <h2>Selected work, with every sample labeled.</h2>
-          <p class="lede">Five cards are professional projects from real engineering work. Demo projects are realistic samples of products Muhammad Saad can design and build. Concept projects describe a product direction. Every demo and concept is labeled on the card. They are not completed client engagements, and this site does not invent client logos, private data, or results.</p>
+          <p class="kicker">Projects</p>
+          <h2>Selected work, clearly separated from concepts.</h2>
+          <p class="lede">Five cards are professional projects from real engineering work. Everything else is marked Concept Project. Concepts show the products Muhammad Saad can design and build. They are not completed client engagements, and this site does not invent client logos, private data, or results.</p>
         </div>
         <div class="filters">
           <div class="filters__row" role="toolbar" aria-label="Project category">
@@ -248,15 +236,14 @@
             <button class="chip" type="button" data-filter="enterprise" aria-pressed="false">Enterprise Applications</button>
             <button class="chip" type="button" data-filter="saas" aria-pressed="false">SaaS Platforms</button>
             <button class="chip" type="button" data-filter="ai" aria-pressed="false">AI Integration</button>
+            <button class="chip" type="button" data-filter="remote" aria-pressed="false">Remote and International</button>
             <button class="chip" type="button" data-filter="automation" aria-pressed="false">Business Automation</button>
             <button class="chip" type="button" data-filter="apis" aria-pressed="false">APIs and Backend</button>
             <button class="chip" type="button" data-filter="analytics" aria-pressed="false">Dashboards and Analytics</button>
-            <button class="chip" type="button" data-filter="remote" aria-pressed="false">Remote delivery</button>
           </div>
           <div class="filters__row" role="toolbar" aria-label="Project status">
             <button class="chip is-active" type="button" data-status-filter="all" aria-pressed="true">All work</button>
             <button class="chip" type="button" data-status-filter="professional" aria-pressed="false">Professional projects</button>
-            <button class="chip" type="button" data-status-filter="demo" aria-pressed="false">Demo projects</button>
             <button class="chip" type="button" data-status-filter="concept" aria-pressed="false">Concept projects</button>
           </div>
         </div>
@@ -273,6 +260,15 @@
             <li><a href="projects/integrityweb.html">IntegrityWeb</a></li>
             <li><a href="projects/ai-knowledge-assistant.html">AI-Powered Business Knowledge Assistant</a></li>
             <li><a href="projects/ai-document-processing.html">AI Document Processing and Data Extraction</a></li>
+            <li><a href="projects/ai-chatbot.html">AI Chatbot Assistant</a></li>
+            <li><a href="projects/ai-customer-support.html">AI Customer Support System</a></li>
+            <li><a href="projects/ai-document-assistant.html">AI Document Assistant</a></li>
+            <li><a href="projects/ai-analytics-dashboard.html">AI-Powered Analytics Dashboard</a></li>
+            <li><a href="projects/ai-knowledge-base.html">AI Knowledge Base</a></li>
+            <li><a href="projects/ai-resume-analyzer.html">AI Resume Analyzer</a></li>
+            <li><a href="projects/remote-collaboration.html">Remote Team Collaboration Platform</a></li>
+            <li><a href="projects/international-business-website.html">International Business Website</a></li>
+            <li><a href="projects/agency-client-portal.html">Client Delivery Portal for Agencies</a></li>
             <li><a href="projects/saas-billing.html">SaaS Subscription and Billing Dashboard</a></li>
             <li><a href="projects/crm-pipeline.html">CRM and Sales Pipeline</a></li>
             <li><a href="projects/inventory-warehouse.html">Inventory and Warehouse Management</a></li>
@@ -288,14 +284,23 @@
             <li><a href="projects/api-integration-hub.html">REST API Integration and Automation Hub</a></li>
             <li><a href="projects/multitenant-admin.html">Multi-tenant SaaS Admin Console</a></li>
             <li><a href="projects/payment-reconciliation.html">Payment Reconciliation Workspace</a></li>
-            <li><a href="projects/remote-sprint-workspace.html">Remote Sprint Workspace</a></li>
-            <li><a href="projects/client-delivery-portal.html">Client Delivery Portal</a></li>
-            <li><a href="projects/enterprise-procurement.html">Enterprise Procurement</a></li>
-            <li><a href="projects/multisite-operations.html">Multi-site Operations Console</a></li>
-            <li><a href="projects/saas-onboarding.html">SaaS Tenant Onboarding</a></li>
-            <li><a href="projects/ai-support-triage.html">AI Support Triage</a></li>
-            <li><a href="projects/ai-requirements-assistant.html">AI Requirements Assistant</a></li>
-            <li><a href="projects/service-business-suite.html">Service Business Suite</a></li>
+            <li><a href="projects/cloud-enterprise-management.html">Cloud-based Enterprise Management System</a></li>
+            <li><a href="projects/multi-region-crm.html">Multi-region CRM Platform</a></li>
+            <li><a href="projects/field-service-mobile.html">Field Service Mobile App</a></li>
+            <li><a href="projects/clinic-management.html">Clinic Management and Patient Portal</a></li>
+            <li><a href="projects/real-estate-platform.html">Real Estate Listings and Lead Platform</a></li>
+            <li><a href="projects/fleet-tracking.html">Logistics and Fleet Tracking Dashboard</a></li>
+            <li><a href="projects/restaurant-ordering.html">Restaurant Ordering and Kitchen Display</a></li>
+            <li><a href="projects/online-learning-platform.html">Online Learning Platform</a></li>
+            <li><a href="projects/invoicing-system.html">Invoicing and Accounts Receivable System</a></li>
+            <li><a href="projects/event-ticketing.html">Event Management and Ticketing Platform</a></li>
+            <li><a href="projects/expense-approvals.html">Expense and Approval Workflow</a></li>
+            <li><a href="projects/erp-system.html">Enterprise Resource Planning (ERP) System</a></li>
+            <li><a href="projects/hr-payroll-system.html">HR and Payroll Management System</a></li>
+            <li><a href="projects/accounting-ledger.html">Accounting and General Ledger System</a></li>
+            <li><a href="projects/procurement-management.html">Procurement and Supplier Management</a></li>
+            <li><a href="projects/pos-retail.html">Point of Sale and Retail Management</a></li>
+            <li><a href="projects/production-planning.html">Manufacturing and Production Planning</a></li>
           </ul>
         </noscript>
         <div class="cta-band">
@@ -308,11 +313,11 @@
       </div>
     </section>
 
-    <section class="section reveal" id="stack">
+    <section class="section section--tint reveal" id="stack">
       <div class="wrap">
         <div class="section-head">
-          <p class="kicker"><span>04</span> Technology</p>
-          <h2>The stack behind the work.</h2>
+          <p class="kicker">Technology</p>
+          <h2>My core stack.</h2>
           <p class="lede">These are the technologies and practices Muhammad Saad uses in full-stack delivery. Certifications and tool endorsements are not listed unless they have been verified.</p>
         </div>
         <div class="stack-grid">
@@ -322,14 +327,50 @@
           <article class="stack-card"><h3>Cloud and DevOps</h3><ul><li>Azure</li><li>Azure DevOps</li><li>AWS</li><li>Docker</li><li>CI/CD</li></ul></article>
           <article class="stack-card"><h3>Security and integration</h3><ul><li>Microsoft identity</li><li>Authentication</li><li>REST APIs</li></ul></article>
           <article class="stack-card"><h3>Architecture and tools</h3><ul><li>Clean Architecture</li><li>Repository Pattern</li><li>Facade Pattern</li><li>Git</li><li>Swagger</li><li>Postman</li></ul></article>
+          <article class="stack-card"><h3>AI integration</h3><ul><li>Hosted language-model APIs</li><li>Question answering over documents</li><li>Prompt and context design</li><li>Human-review workflows</li><li>Summaries and classification</li></ul></article>
         </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="any-stack" aria-labelledby="any-stack-title">
+      <div class="wrap">
+        <div class="stack-panel">
+          <div class="stack-panel__art" aria-hidden="true"><img src="assets/images/banner-stack.svg" alt="" width="1600" height="720" loading="lazy"></div>
+          <div class="stack-panel__copy">
+            <p class="kicker">Open stack development</p>
+            <h2 id="any-stack-title">Your stack, my engineering.</h2>
+            <p class="lede">.NET and Angular are where my experience runs deepest. But a good product should not be forced onto a stack because of who is building it. If your team already runs on another stack, I am open to building in it, and I will tell you plainly if a specialist would serve you better.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#contact">Discuss your stack</a>
+              <a class="btn btn-secondary" href="#faq">How it works</a>
+            </div>
+          </div>
+          <div class="stack-panel__chips">
+            <p class="stack-legend"><span class="legend-core"></span> Deepest experience <span class="legend-open"></span> Open to build in</p>
+            <div class="chip-group"><span class="chip-group__name">Backend</span><ul><li class="is-core">C#</li><li class="is-core">ASP.NET Core</li><li>Node.js</li><li>Python</li><li>Java</li><li>PHP and Laravel</li></ul></div>
+            <div class="chip-group"><span class="chip-group__name">Frontend</span><ul><li class="is-core">Angular</li><li class="is-core">TypeScript</li><li>React</li><li>Vue</li><li>Next.js</li></ul></div>
+            <div class="chip-group"><span class="chip-group__name">Mobile</span><ul><li>Progressive web apps</li><li>Flutter</li><li>React Native</li><li>Ionic</li></ul></div>
+            <div class="chip-group"><span class="chip-group__name">Data</span><ul><li class="is-core">SQL Server</li><li class="is-core">Entity Framework Core</li><li class="is-core">MongoDB</li><li>PostgreSQL</li><li>MySQL</li><li>Redis</li></ul></div>
+            <div class="chip-group"><span class="chip-group__name">Cloud and DevOps</span><ul><li class="is-core">Azure</li><li class="is-core">AWS</li><li class="is-core">Docker</li><li class="is-core">CI/CD</li></ul></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner-strip" aria-labelledby="banner-title">
+      <div class="banner-strip__art" aria-hidden="true"><img src="assets/images/hero-banner.svg" alt="" width="1920" height="1000" loading="lazy"></div>
+      <div class="wrap">
+        <p class="kicker">Riyadh, Saudi Arabia</p>
+        <h2 id="banner-title">Software that has to keep working, built to last.</h2>
+        <p>One senior engineer from the first technical conversation to release and handover, working in English and Urdu with teams across the GCC and beyond.</p>
+        <a class="btn btn-primary" href="#contact">Start a project</a>
       </div>
     </section>
 
     <section class="section reveal" id="about">
       <div class="wrap about-grid">
         <div class="about-copy">
-          <p class="kicker"><span>05</span> About</p>
+          <p class="kicker">About</p>
           <h2>A senior full stack developer based in Riyadh.</h2>
           <p class="pull">Engineering Digital Products. Solving Real Business Problems.</p>
           <p>Muhammad Saad designs and builds web applications for businesses, startups, software agencies, and enterprise teams. The usual path is an ASP.NET Core backend, an Angular interface, and SQL Server, with authentication and cloud deployment included when the product needs them.</p>
@@ -346,7 +387,7 @@
     <section class="section reveal" id="process">
       <div class="wrap">
         <div class="section-head">
-          <p class="kicker"><span>06</span> Process</p>
+          <p class="kicker">Process</p>
           <h2>A clear path from first call to release.</h2>
           <p class="lede">The sequence stays visible, so you always know whether the work is being defined, built, reviewed, or released.</p>
         </div>
@@ -360,10 +401,26 @@
       </div>
     </section>
 
-    <section class="section reveal" id="pricing">
+    <section class="banner-strip banner-strip--global" aria-labelledby="global-title">
+      <div class="banner-strip__art" aria-hidden="true"><img src="assets/images/banner-global.svg" alt="" width="1920" height="640" loading="lazy"></div>
+      <div class="wrap">
+        <div class="banner-card">
+        <p class="kicker">Remote and international</p>
+        <h2 id="global-title">Based in Riyadh. Working across time zones.</h2>
+        <p>Startups, agencies, and businesses in Saudi Arabia, the Gulf, and further afield can work with me directly. Updates arrive in plain language, on the channel you prefer.</p>
+        <ul class="fact-chips">
+          <li>UTC+3, overlapping GCC and European working hours</li>
+          <li>English and Urdu</li>
+          <li>Email, WhatsApp, or scheduled calls</li>
+        </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tint reveal" id="pricing">
       <div class="wrap">
         <div class="section-head">
-          <p class="kicker"><span>07</span> Pricing</p>
+          <p class="kicker">Pricing</p>
           <h2>Three ways to engage.</h2>
           <p class="lede">Pick the commercial shape that matches the work. Figures are published here only after they are finalized.</p>
         </div>
@@ -403,22 +460,10 @@
       </div>
     </section>
 
-    <section class="section reveal" id="testimonials">
+        <section class="section section--tint reveal" id="faq">
       <div class="wrap">
         <div class="section-head">
-          <p class="kicker"><span>08</span> Feedback</p>
-          <h2>Client feedback</h2>
-        </div>
-        <div class="testimonial-placeholder" id="testimonial-slot">
-          <p>Approved client feedback will be added here. This site does not publish invented reviews.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section reveal" id="faq">
-      <div class="wrap">
-        <div class="section-head">
-          <p class="kicker"><span>09</span> FAQ</p>
+          <p class="kicker">FAQ</p>
           <h2>Questions clients ask before they start.</h2>
         </div>
         <div class="faq-list" id="faq-list"></div>
@@ -432,10 +477,24 @@
       </div>
     </section>
 
+    <section class="cta-banner" aria-labelledby="cta-title">
+      <div class="cta-banner__art" aria-hidden="true"><img src="assets/images/banner-cta.svg" alt="" width="1920" height="560" loading="lazy"></div>
+      <div class="wrap cta-banner__inner">
+        <div>
+          <h2 id="cta-title">Have a project in mind? Let&rsquo;s build it properly.</h2>
+          <p>Tell me the problem, the deadline, and the stack you already use. You get a personal reply with a practical next step.</p>
+        </div>
+        <div class="cta-banner__actions">
+          <a class="btn btn-primary" href="#contact">Get a Free Quote</a>
+          <a class="btn btn-secondary" href="https://wa.me/966597899079" target="_blank" rel="noopener noreferrer">Message on WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
     <section class="section" id="contact">
       <div class="wrap">
         <div class="section-head">
-          <p class="kicker"><span>10</span> Contact</p>
+          <p class="kicker">Contact</p>
           <h2>Tell me what you need built.</h2>
           <p class="lede">Use the form, or reach Muhammad Saad directly. If the form provider has not been connected yet, the form will say so and will not pretend the message was sent.</p>
         </div>
@@ -447,6 +506,7 @@
               <li><a href="tel:+966597899079">+966 59 789 9079</a></li>
               <li><a href="https://wa.me/966597899079" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
               <li><a href="https://www.linkedin.com/in/muhammad-saad-421217175/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://github.com/Saad2618" target="_blank" rel="noopener noreferrer">GitHub</a></li>
             </ul>
             <p>Riyadh, Saudi Arabia<br>English and Urdu<br>Available for suitable freelance and remote projects</p>
             <p>By sending a message you agree to be contacted about this inquiry. Details are in the <a href="privacy.html">privacy note</a>.</p>
@@ -579,7 +639,7 @@
           <li><a href="tel:+966597899079">+966 59 789 9079</a></li>
           <li><a href="https://wa.me/966597899079" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
           <li><a href="https://www.linkedin.com/in/muhammad-saad-421217175/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-          <li id="github-slot">GitHub profile link forthcoming</li>
+          <li id="github-slot"><a href="https://github.com/Saad2618" target="_blank" rel="noopener noreferrer">GitHub</a></li>
         </ul>
       </div>
     </div>

@@ -1,0 +1,875 @@
+[
+ {
+  "id": "empowerid",
+  "title": "EmpowerID",
+  "type": "Identity and Access Management",
+  "summary": "Enterprise identity administration for deciding who can reach systems, roles, and sensitive operations.",
+  "status": "professional",
+  "statusLabel": "Professional Project",
+  "categories": [
+   "enterprise",
+   "apis"
+  ],
+  "stack": [
+   "C#",
+   ".NET",
+   "SQL Server",
+   "REST APIs"
+  ],
+  "page": "projects/empowerid.html",
+  "layout": "dashboard",
+  "mockTitle": "Access",
+  "accent": "cyan",
+  "pageFromRoot": "projects/empowerid.html",
+  "need": "Organizations accumulate applications faster than they accumulate a clear answer to a basic question: who should be able to do what. When that answer lives in inboxes and shared passwords, reviews become painful and mistakes become expensive.",
+  "approach": "The work focused on identity records, role-based access, and the administrative workflows around them. The engineering emphasis was authorization boundaries, reliable data, and screens an operations team can use when someone joins, moves, or leaves.",
+  "functionality": [
+   "Identity and role administration for operational staff",
+   "Access assignment and review workflows",
+   "Authentication-aware behavior inside the application",
+   "Administrative views for day-to-day access decisions"
+  ],
+  "tech": [
+   "C#",
+   ".NET",
+   "SQL Server",
+   "REST APIs",
+   "Authentication and authorization"
+  ],
+  "outcome": "Verified outcome metrics are not published for this project. Figures, client logos, and production URLs are omitted until they are confirmed and approved for public use.",
+  "service": "Authentication%20and%20Application%20Security",
+  "desc": "Enterprise engineering on identity and access management: who can reach which systems, under which roles, and how that access is reviewed.",
+  "lede": "Identity and Access Management. Enterprise engineering on identity and access management: who can reach which systems, under which roles, and how that access is reviewed."
+ },
+ {
+  "id": "profile-management",
+  "title": "Profile Management System",
+  "type": "Profile and account administration",
+  "summary": "A single place to maintain person and account records, with permissions around who can see and change them.",
+  "status": "professional",
+  "statusLabel": "Professional Project",
+  "categories": [
+   "enterprise",
+   "automation"
+  ],
+  "stack": [
+   "ASP.NET Core",
+   "Angular",
+   "SQL Server"
+  ],
+  "page": "projects/profile-management.html",
+  "layout": "dashboard",
+  "mockTitle": "Profiles",
+  "accent": "blue",
+  "pageFromRoot": "projects/profile-management.html",
+  "need": "Profile data that is copied between teams drifts. People update one record and forget another, and nobody can say with confidence which version is current or who is allowed to change it.",
+  "approach": "The system treats a profile as a maintained record with a clear update path and role-based visibility. The goal is an application staff can search, correct, and trust, rather than a folder of exports.",
+  "functionality": [
+   "Profile records with search",
+   "Role-based visibility of sensitive fields",
+   "Controlled updates instead of ad-hoc edits",
+   "A structure that can retain a history of important changes"
+  ],
+  "tech": [
+   "ASP.NET Core",
+   "Angular",
+   "SQL Server",
+   "REST APIs"
+  ],
+  "outcome": "Verified outcome metrics are not published for this project. Figures, client logos, and production URLs are omitted until they are confirmed and approved for public use.",
+  "service": "Custom%20Web%20Application%20Development",
+  "desc": "A structured system for person and account profiles, so updates happen in one place and visibility follows a permission model.",
+  "lede": "Profile and account administration. A structured system for person and account profiles, so updates happen in one place and visibility follows a permission model."
+ },
+ {
+  "id": "solidarity",
+  "title": "Solidarity",
+  "type": "Insurance management",
+  "summary": "Insurance administration software for policy records, people, and the operational steps staff move through each day.",
+  "status": "professional",
+  "statusLabel": "Professional Project",
+  "categories": [
+   "enterprise",
+   "automation"
+  ],
+  "stack": [
+   "ASP.NET Core",
+   "Angular",
+   "SQL Server"
+  ],
+  "page": "projects/solidarity.html",
+  "layout": "board",
+  "mockTitle": "Policies",
+  "accent": "teal",
+  "pageFromRoot": "projects/solidarity.html",
+  "need": "Insurance operations depend on accurate records and a visible status for work in progress. When that work is split across spreadsheets and personal queues, handoffs are slow and errors are hard to see.",
+  "approach": "The build centered on reliable records and staff-facing screens for everyday processing. Status, search, and permissions were treated as part of the product, not as a report someone would add later.",
+  "functionality": [
+   "Policy and participant records",
+   "Status tracking through operational steps",
+   "Search and filtered work lists",
+   "Role-aware access to sensitive information"
+  ],
+  "tech": [
+   "ASP.NET Core",
+   "Angular",
+   "SQL Server",
+   "REST APIs"
+  ],
+  "outcome": "Verified outcome metrics are not published for this project. Figures, client logos, and production URLs are omitted until they are confirmed and approved for public use.",
+  "service": "Custom%20Web%20Application%20Development",
+  "desc": "Application engineering for insurance administration: policy-related records, people, and the operational steps a team moves through.",
+  "lede": "Insurance management. Application engineering for insurance administration: policy-related records, people, and the operational steps a team moves through."
+ },
+ {
+  "id": "metro-kiosk",
+  "title": "Metro Kiosk Platform",
+  "type": "Public kiosk software",
+  "summary": "A fixed-screen kiosk experience for short, guided tasks, backed by services that talk to the operational systems behind it.",
+  "status": "professional",
+  "statusLabel": "Professional Project",
+  "categories": [
+   "enterprise",
+   "automation"
+  ],
+  "stack": [
+   "ASP.NET Core",
+   "Web UI",
+   "SQL Server"
+  ],
+  "page": "projects/metro-kiosk.html",
+  "layout": "kiosk",
+  "mockTitle": "Kiosk",
+  "accent": "amber",
+  "pageFromRoot": "projects/metro-kiosk.html",
+  "need": "A kiosk fails when it assumes the habits of a desktop user. Sessions are short, the screen is fixed, and the person in front of it may never have used the service before.",
+  "approach": "The interface was shaped around a few guided tasks, large targets, and obvious confirmation and error states. Behind the screen, services connect the kiosk to the operational systems that actually hold the data.",
+  "functionality": [
+   "Guided on-screen flows for short sessions",
+   "Touch-first layout with a small set of actions",
+   "Clear confirmation and failure states",
+   "Integration points for the systems behind the kiosk"
+  ],
+  "tech": [
+   "Web interface",
+   "ASP.NET Core",
+   "SQL Server",
+   "REST APIs"
+  ],
+  "outcome": "Verified outcome metrics are not published for this project. Figures, client logos, and production URLs are omitted until they are confirmed and approved for public use.",
+  "service": "Custom%20Web%20Application%20Development",
+  "desc": "Kiosk software for a fixed screen in a public setting, where a person has a short time and no reason to learn a complex interface.",
+  "lede": "Public kiosk software. Kiosk software for a fixed screen in a public setting, where a person has a short time and no reason to learn a complex interface."
+ },
+ {
+  "id": "integrityweb",
+  "title": "IntegrityWeb",
+  "type": "Case management",
+  "summary": "A shared case record for intake, ownership, status, and notes, so operational work is not trapped in private inboxes.",
+  "status": "professional",
+  "statusLabel": "Professional Project",
+  "categories": [
+   "enterprise",
+   "analytics"
+  ],
+  "stack": [
+   "ASP.NET Core",
+   "Angular",
+   "SQL Server"
+  ],
+  "page": "projects/integrityweb.html",
+  "layout": "board",
+  "mockTitle": "Cases",
+  "accent": "violet",
+  "pageFromRoot": "projects/integrityweb.html",
+  "need": "Cases that live in personal inboxes have no reliable owner, no shared status, and no honest history. Handover means forwarding a thread and hoping the context survives.",
+  "approach": "IntegrityWeb is approached as an operational system: a case comes in, someone owns it, the status changes in the open, and notes stay on the record. Lists and filters support the work of the day rather than a separate reporting project.",
+  "functionality": [
+   "Case intake and assignment",
+   "Status and priority on the shared record",
+   "Notes and activity kept with the case",
+   "Filtered lists for daily operational work"
+  ],
+  "tech": [
+   "ASP.NET Core",
+   "Angular",
+   "SQL Server",
+   "REST APIs"
+  ],
+  "outcome": "Verified outcome metrics are not published for this project. Figures, client logos, and production URLs are omitted until they are confirmed and approved for public use.",
+  "service": "Custom%20Web%20Application%20Development",
+  "desc": "Case management for intake, assignment, notes, and status, so a team shares one record of the work instead of reconstructing it from email.",
+  "lede": "Case management. Case management for intake, assignment, notes, and status, so a team shares one record of the work instead of reconstructing it from email."
+ },
+ {
+  "id": "ai-knowledge-assistant",
+  "title": "AI-Powered Business Knowledge Assistant",
+  "type": "Internal knowledge assistant",
+  "summary": "A private assistant over a company's approved documents, so staff can ask questions and see the source behind an answer.",
+  "status": "concept",
+  "statusLabel": "Concept Project",
+  "categories": [
+   "ai",
+   "automation"
+  ],
+  "stack": [
+   "ASP.NET Core",
+   "Angular",
+   "SQL Server"
+  ],
+  "page": "projects/ai-knowledge-assistant.html",
+  "layout": "chat",
+  "mockTitle": "Knowledge",
+  "accent": "cyan",
+  "pageFromRoot": "projects/ai-knowledge-assistant.html",
+  "need": "Policies and procedures exist, but people still interrupt colleagues because search in a shared drive does not answer a specific question. An ungrounded chatbot makes that worse by sounding sure when it is guessing.",
+  "approach": "The concept limits the assistant to approved sources, shows those sources next to the answer, and keeps access aligned with the permissions the business already uses. A person remains responsible for publishing or retiring a source.",
+  "functionality": [
+   "Questions answered only from approved material",
+   "Source references beside each answer",
+   "Access control consistent with document permissions",
+   "An admin view for what the assistant is allowed to read"
+  ],
+  "tech": [
+   "ASP.NET Core",
+   "Angular",
+   "SQL Server",
+   "Document storage",
+   "Hosted language-model API"
+  ],
+  "outcome": "This is a concept project. It describes a product Muhammad Saad can design and build. It is not a completed client engagement, and it does not represent a live system or a measured business result.",
+  "service": "Custom%20Web%20Application%20Development",
+  "desc": "A private assistant over a company&#39;s approved documents, so staff can ask a question and see which source the answer came from.",
+  "lede": "Internal knowledge assistant. A private assistant over a company&#39;s approved documents, so staff can ask a question and see which source the answer came from."
+ },
+ {
+  "id": "ai-document-processing",
+  "title": "AI Document Processing and Data Extraction",
+  "type": "Document intake",
+  "summary": "Turns incoming files into structured fields a business system can store, with a person confirming the result before it is final.",
+  "status": "concept",
+  "statusLabel": "Concept Project",
+  "categories": [
+   "ai",
+   "automation"
+  ],
+  "stack": [
+   "ASP.NET Core",
+   "Angular",
+   "SQL Server"
+  ],
+  "page": "projects/ai-document-processing.html",
+  "layout": "doc",
+  "mockTitle": "Extract",
+  "accent": "blue",
+  "pageFromRoot": "projects/ai-document-processing.html",
+  "need": "Teams still retype invoices, forms, and PDFs into the system of record. Fully automatic import is risky when a wrong field changes a payment, a policy, or a customer record.",
+  "approach": "The concept extracts candidate fields, shows them next to the original document, and requires a human decision before anything is committed. Low-confidence fields are the ones a reviewer sees first.",
+  "functionality": [
+   "Upload and queue for incoming documents",
+   "Suggested fields with a review step",
+   "Attention drawn to low-confidence values",
+   "Export into the system that should own the data"
+  ],
+  "tech": [
+   "ASP.NET Core",
+   "Angular",
+   "SQL Server",
+   "Document intelligence API"
+  ],
+  "outcome": "This is a concept project. It describes a product Muhammad Saad can design and build. It is not a completed client engagement, and it does not represent a live system or a measured business result.",
+  "service": "Custom%20Web%20Application%20Development",
+  "desc": "Incoming files become structured fields a business system can store, after a person confirms the extraction.",
+  "lede": "Document intake. Incoming files become structured fields a business system can store, after a person confirms the extraction."
+ },
+ {
+  "id": "saas-billing",
+  "title": "SaaS Subscription and Billing Dashboard",
+  "type": "Subscription operations",
+  "summary": "Plans, subscriptions, invoices, and account status for a software product that charges on a recurring basis.",
+  "status": "concept",
+  "statusLabel": "Concept Project",
+  "categories": [
+   "saas",
+   "analytics"
+  ],
+  "stack": [
+   "ASP.NET Core",
+   "Angular",
+   "SQL Server"
+  ],
+  "page": "projects/saas-billing.html",
+  "layout": "dashboard",
+  "mockTitle": "Billing",
+  "accent": "teal",
+  "pageFromRoot": "projects/saas-billing.html",
+  "need": "Subscription state that lives only inside a payment provider is hard for support and finance to explain. Someone asks why an account is past due, and the answer requires three logins.",
+  "approach": "The concept gives the company its own operational view: which plan a customer is on, what was invoiced, and what the payment status is. The payment provider remains the processor. This product is the place the team works.",
+  "functionality": [
+   "Plans and customer subscriptions",
+   "Invoice history and payment status",
+   "A clear past-due state for support",
+   "An admin path that does not require opening the processor for every question"
+  ],
+  "tech": [
+   "ASP.NET Core",
+   "Angular",
+   "SQL Server",
+   "Payment provider integration"
+  ],
+  "outcome": "This is a concept project. It describes a product Muhammad Saad can design and build. It is not a completed client engagement, and it does not represent a live system or a measured business result.",
+  "service": "Custom%20Web%20Application%20Development",
+  "desc": "Plans, subscriptions, invoices, and account status for a software product that bills on a recurring schedule.",
+  "lede": "Subscription operations. Plans, subscriptions, invoices, and account status for a software product that bills on a recurring schedule."
+ },
+ {
+  "id": "crm-pipeline",
+  "title": "CRM and Sales Pipeline",
+  "type": "Sales operations",
+  "summary": "Leads moving through defined stages, with an owner and a next action, instead of a spreadsheet that drifts out of date.",
+  "status": "concept",
+  "statusLabel": "Concept Project",
+  "categories": [
+   "saas",
+   "automation",
+   "analytics"
+  ],
+  "stack": [
+   "ASP.NET Core",
+   "Angular",
+   "SQL Server"
+  ],
+  "page": "projects/crm-pipeline.html",
+  "layout": "pipeline",
+  "mockTitle": "Pipeline",
+  "accent": "violet",
+  "pageFromRoot": "projects/crm-pipeline.html",
+  "need": "Early-stage sales teams outgrow a spreadsheet when two people update the same deal and nobody can tell which forecast is real. The failure is operational, not a lack of charts.",
+  "approach": "The concept is a small CRM with a board, a lead record, and an activity trail. Forecasting stays simple enough that a manager can see the pipeline without a separate analytics project.",
+  "functionality": [
+   "Stages from new lead to won or lost",
+   "An owner and a next action on each record",
+   "Activity notes kept with the deal",
+   "A straightforward view of what is in each stage"
+  ],
+  "tech": [
+   "ASP.NET Core",
+   "Angular",
+   "SQL Server"
+  ],
+  "outcome": "This is a concept project. It describes a product Muhammad Saad can design and build. It is not a completed client engagement, and it does not represent a live system or a measured business result.",
+  "service": "Custom%20Web%20Application%20Development",
+  "desc": "A pipeline where every lead has an owner, a stage, and a next action.",
+  "lede": "Sales operations. A pipeline where every lead has an owner, a stage, and a next action."
+ },
+ {
+  "id": "inventory-warehouse",
+  "title": "Inventory and Warehouse Management",
+  "type": "Stock operations",
+  "summary": "SKU records, locations, and stock movements so a warehouse can see what arrived, what left, and what is running low.",
+  "status": "concept",
+  "statusLabel": "Concept Project",
+  "categories": [
+   "enterprise",
+   "automation"
+  ],
+  "stack": [
+   "ASP.NET Core",
+   "Angular",
+   "SQL Server"
+  ],
+  "page": "projects/inventory-warehouse.html",
+  "layout": "dashboard",
+  "mockTitle": "Stock",
+  "accent": "amber",
+  "pageFromRoot": "projects/inventory-warehouse.html",
+  "need": "Stock counts that are updated after the fact create orders the warehouse cannot fill. The useful question is not what the spreadsheet said last week. It is what is in a location now.",
+  "approach": "The concept records receipts, issues, and adjustments against locations. Low-stock visibility is a consequence of those movements, not a separate number someone types in.",
+  "functionality": [
+   "SKU and location records",
+   "Receipts, issues, and adjustments",
+   "A low-stock view driven by movements",
+   "A history of who changed a quantity"
+  ],
+  "tech": [
+   "ASP.NET Core",
+   "Angular",
+   "SQL Server"
+  ],
+  "outcome": "This is a concept project. It describes a product Muhammad Saad can design and build. It is not a completed client engagement, and it does not represent a live system or a measured business result.",
+  "service": "Custom%20Web%20Application%20Development",
+  "desc": "SKU records, locations, and movements so a warehouse can see what arrived, what left, and what is running low.",
+  "lede": "Stock operations. SKU records, locations, and movements so a warehouse can see what arrived, what left, and what is running low."
+ },
+ {
+  "id": "hr-leave",
+  "title": "HR and Leave Management",
+  "type": "People operations",
+  "summary": "Leave requests, balances, and approvals in one flow, so managers are not reconstructing time off from chat messages.",
+  "status": "concept",
+  "statusLabel": "Concept Project",
+  "categories": [
+   "enterprise",
+   "automation"
+  ],
+  "stack": [
+   "ASP.NET Core",
+   "Angular",
+   "SQL Server"
+  ],
+  "page": "projects/hr-leave.html",
+  "layout": "board",
+  "mockTitle": "Leave",
+  "accent": "rose",
+  "pageFromRoot": "projects/hr-leave.html",
+  "need": "Time off requested in chat is hard to approve fairly and harder to reconstruct at the end of the year. Managers should not need a spreadsheet to know who is away.",
+  "approach": "The concept is a request, an approval chain, a balance, and a calendar. It is intentionally narrower than a full HR suite, so a company can adopt it without replacing payroll on day one.",
+  "functionality": [
+   "Leave requests with a status",
+   "Approval by the right manager",
+   "A balance the employee can see",
+   "A calendar of approved leave"
+  ],
+  "tech": [
+   "ASP.NET Core",
+   "Angular",
+   "SQL Server"
+  ],
+  "outcome": "This is a concept project. It describes a product Muhammad Saad can design and build. It is not a completed client engagement, and it does not represent a live system or a measured business result.",
+  "service": "Custom%20Web%20Application%20Development",
+  "desc": "Leave requests, balances, and approvals in one flow instead of a chain of messages.",
+  "lede": "People operations. Leave requests, balances, and approvals in one flow instead of a chain of messages."
+ },
+ {
+  "id": "school-management",
+  "title": "School Management System",
+  "type": "Education administration",
+  "summary": "Student records, classes, attendance, and basic academic information for a school office that has outgrown paper and scattered files.",
+  "status": "concept",
+  "statusLabel": "Concept Project",
+  "categories": [
+   "enterprise"
+  ],
+  "stack": [
+   "ASP.NET Core",
+   "Angular",
+   "SQL Server"
+  ],
+  "page": "projects/school-management.html",
+  "layout": "dashboard",
+  "mockTitle": "School",
+  "accent": "blue",
+  "pageFromRoot": "projects/school-management.html",
+  "need": "School offices often run on paper, messaging apps, and a different spreadsheet for every term. Attendance and class lists diverge, and a simple question takes a search through files.",
+  "approach": "The concept gives the office one record for a student, a class assignment, attendance, and a place for grades. It is an administration system, scoped so a school can start with records and attendance before adding more.",
+  "functionality": [
+   "Student profiles",
+   "Class assignment",
+   "Attendance recording",
+   "A basic academic record"
+  ],
+  "tech": [
+   "ASP.NET Core",
+   "Angular",
+   "SQL Server"
+  ],
+  "outcome": "This is a concept project. It describes a product Muhammad Saad can design and build. It is not a completed client engagement, and it does not represent a live system or a measured business result.",
+  "service": "Custom%20Web%20Application%20Development",
+  "desc": "Student records, classes, attendance, and basic academic information for a school office.",
+  "lede": "Education administration. Student records, classes, attendance, and basic academic information for a school office."
+ },
+ {
+  "id": "appointment-booking",
+  "title": "Appointment Booking Platform",
+  "type": "Scheduling",
+  "summary": "Services, availability, and bookings for clinics, consultancies, and other businesses that live by the calendar.",
+  "status": "concept",
+  "statusLabel": "Concept Project",
+  "categories": [
+   "saas",
+   "automation"
+  ],
+  "stack": [
+   "ASP.NET Core",
+   "Angular",
+   "SQL Server"
+  ],
+  "page": "projects/appointment-booking.html",
+  "layout": "kiosk",
+  "mockTitle": "Bookings",
+  "accent": "teal",
+  "pageFromRoot": "projects/appointment-booking.html",
+  "need": "Booking by phone does not scale, and a public form that ignores real availability creates double bookings the staff then have to unwind.",
+  "approach": "The concept starts from availability: services, staff hours, and existing bookings. A customer can reserve an open slot. Staff see the day. Reminders are a defined integration, not an assumption.",
+  "functionality": [
+   "Services and staff availability",
+   "Booking into an open slot",
+   "A staff calendar for the day",
+   "A defined place for reminders"
+  ],
+  "tech": [
+   "ASP.NET Core",
+   "Angular",
+   "SQL Server"
+  ],
+  "outcome": "This is a concept project. It describes a product Muhammad Saad can design and build. It is not a completed client engagement, and it does not represent a live system or a measured business result.",
+  "service": "Custom%20Web%20Application%20Development",
+  "desc": "Services, availability, and bookings for clinics, consultancies, and other calendar-led businesses.",
+  "lede": "Scheduling. Services, availability, and bookings for clinics, consultancies, and other calendar-led businesses."
+ },
+ {
+  "id": "ecommerce-catalog",
+  "title": "E-Commerce Product Catalog",
+  "type": "Commerce catalog",
+  "summary": "A maintainable product catalog with categories, search, and an admin path for merchandising, ready to connect to checkout when needed.",
+  "status": "concept",
+  "statusLabel": "Concept Project",
+  "categories": [
+   "saas"
+  ],
+  "stack": [
+   "ASP.NET Core",
+   "Angular",
+   "SQL Server"
+  ],
+  "page": "projects/ecommerce-catalog.html",
+  "layout": "board",
+  "mockTitle": "Catalog",
+  "accent": "amber",
+  "pageFromRoot": "projects/ecommerce-catalog.html",
+  "need": "Many stores need a catalog they can actually maintain before they need a full commerce platform. Product data in a page builder becomes impossible to trust once the range grows.",
+  "approach": "The concept covers catalog structure, product pages, and an admin for edits and availability. Cart and payment are integration points, not a claim that a storefront is already running.",
+  "functionality": [
+   "Categories and product records",
+   "Search across the catalog",
+   "Availability flags for merchandising",
+   "An admin path for product edits"
+  ],
+  "tech": [
+   "ASP.NET Core",
+   "Angular",
+   "SQL Server"
+  ],
+  "outcome": "This is a concept project. It describes a product Muhammad Saad can design and build. It is not a completed client engagement, and it does not represent a live system or a measured business result.",
+  "service": "Custom%20Web%20Application%20Development",
+  "desc": "A product catalog with categories, search, and an admin path for merchandising, ready to connect to checkout when the business is ready.",
+  "lede": "Commerce catalog. A product catalog with categories, search, and an admin path for merchandising, ready to connect to checkout when the business is ready."
+ },
+ {
+  "id": "referral-affiliate",
+  "title": "Referral and Affiliate Tracking",
+  "type": "Partner growth",
+  "summary": "Tracks who referred a customer and which reward is due, with a clear status from click to qualified conversion.",
+  "status": "concept",
+  "statusLabel": "Concept Project",
+  "categories": [
+   "saas",
+   "analytics"
+  ],
+  "stack": [
+   "ASP.NET Core",
+   "Angular",
+   "SQL Server"
+  ],
+  "page": "projects/referral-affiliate.html",
+  "layout": "dashboard",
+  "mockTitle": "Referrals",
+  "accent": "violet",
+  "pageFromRoot": "projects/referral-affiliate.html",
+  "need": "Referral promises made in spreadsheets turn into disputes. A partner wants to know what converted. Finance wants to know what is actually payable.",
+  "approach": "The concept records a code or link, a conversion status, and a reward ledger. A partner sees their own results. The company sees exceptions before anyone is paid.",
+  "functionality": [
+   "Referral codes or links",
+   "Conversion status a reviewer can trust",
+   "A reward ledger with a payable state",
+   "A limited partner view"
+  ],
+  "tech": [
+   "ASP.NET Core",
+   "Angular",
+   "SQL Server"
+  ],
+  "outcome": "This is a concept project. It describes a product Muhammad Saad can design and build. It is not a completed client engagement, and it does not represent a live system or a measured business result.",
+  "service": "Custom%20Web%20Application%20Development",
+  "desc": "Tracks who referred a customer and which reward is due, from the introduction through a qualified conversion.",
+  "lede": "Partner growth. Tracks who referred a customer and which reward is due, from the introduction through a qualified conversion."
+ },
+ {
+  "id": "notifications-dashboard",
+  "title": "Real-Time Notifications Dashboard",
+  "type": "Operations alerts",
+  "summary": "A live view of business and system events, with filters and read state, so the right people see what changed.",
+  "status": "concept",
+  "statusLabel": "Concept Project",
+  "categories": [
+   "analytics",
+   "apis"
+  ],
+  "stack": [
+   "ASP.NET Core",
+   "Angular",
+   "SQL Server"
+  ],
+  "page": "projects/notifications-dashboard.html",
+  "layout": "endpoints",
+  "mockTitle": "Signals",
+  "accent": "cyan",
+  "pageFromRoot": "projects/notifications-dashboard.html",
+  "need": "Important events are easy to miss when they arrive as unstructured email. They are also easy to ignore when every event arrives with the same urgency.",
+  "approach": "The concept is a stream the right roles can filter: what happened, whether it has been seen, and which events a person has chosen to receive. Delivery can be near real time without pretending every business needs a trading-desk screen.",
+  "functionality": [
+   "An event stream with type and time",
+   "Read and unread state",
+   "Filters for the work a role actually owns",
+   "Preferences for what creates an alert"
+  ],
+  "tech": [
+   "ASP.NET Core",
+   "Angular",
+   "SQL Server",
+   "SignalR or a polling API"
+  ],
+  "outcome": "This is a concept project. It describes a product Muhammad Saad can design and build. It is not a completed client engagement, and it does not represent a live system or a measured business result.",
+  "service": "ASP.NET%20Core%20API%20and%20Backend%20Development",
+  "desc": "A live operations view of business and system events, with filters and a read state.",
+  "lede": "Operations alerts. A live operations view of business and system events, with filters and a read state."
+ },
+ {
+  "id": "analytics-dashboard",
+  "title": "Business Analytics Dashboard",
+  "type": "Management reporting",
+  "summary": "Operational numbers the business already stores, presented with filters and trends a manager can read without exporting five spreadsheets.",
+  "status": "concept",
+  "statusLabel": "Concept Project",
+  "categories": [
+   "analytics"
+  ],
+  "stack": [
+   "ASP.NET Core",
+   "Angular",
+   "SQL Server"
+  ],
+  "page": "projects/analytics-dashboard.html",
+  "layout": "dashboard",
+  "mockTitle": "Insights",
+  "accent": "blue",
+  "pageFromRoot": "projects/analytics-dashboard.html",
+  "need": "Reporting fails when every question starts with an export. The data is often already in SQL Server. What is missing is a reliable view with an agreed definition of each number.",
+  "approach": "The concept starts by naming the measures, the date range, and the filters. The dashboard is only as honest as those definitions. Export remains available, but it is no longer the only way to see the week.",
+  "functionality": [
+   "A small set of agreed measures",
+   "Trends over a selected period",
+   "Filters such as team or date",
+   "Export for the cases that still need a file"
+  ],
+  "tech": [
+   "ASP.NET Core",
+   "Angular",
+   "SQL Server"
+  ],
+  "outcome": "This is a concept project. It describes a product Muhammad Saad can design and build. It is not a completed client engagement, and it does not represent a live system or a measured business result.",
+  "service": "SQL%20Server%20and%20Database%20Optimization",
+  "desc": "Operational numbers a business already stores, presented so a manager can read them without assembling five exports.",
+  "lede": "Management reporting. Operational numbers a business already stores, presented so a manager can read them without assembling five exports."
+ },
+ {
+  "id": "legacy-modernization",
+  "title": "Legacy .NET Application Modernization",
+  "type": "Platform modernization",
+  "summary": "A staged path from an older .NET application to ASP.NET Core, extracting APIs and replacing the interface without a reckless rewrite.",
+  "status": "concept",
+  "statusLabel": "Concept Project",
+  "categories": [
+   "apis",
+   "enterprise"
+  ],
+  "stack": [
+   "ASP.NET Core",
+   "Angular",
+   "SQL Server"
+  ],
+  "page": "projects/legacy-modernization.html",
+  "layout": "endpoints",
+  "mockTitle": "Modernize",
+  "accent": "rose",
+  "pageFromRoot": "projects/legacy-modernization.html",
+  "need": "Older .NET systems keep the business running and also make every change slower. A full rewrite sounds clean and usually hides the rules that were never written down.",
+  "approach": "The concept starts with the boundaries: which behavior must be preserved, which parts can become APIs first, and which screens can be replaced while the old system still serves the rest. Deployment and rollback are part of the plan, not a final week surprise.",
+  "functionality": [
+   "An assessment of boundaries and risk",
+   "APIs extracted around stable business rules",
+   "Incremental replacement of the interface",
+   "A deployment path that can ship in slices"
+  ],
+  "tech": [
+   "ASP.NET Core",
+   "Angular",
+   "SQL Server",
+   "Azure DevOps"
+  ],
+  "outcome": "This is a concept project. It describes a product Muhammad Saad can design and build. It is not a completed client engagement, and it does not represent a live system or a measured business result.",
+  "service": "ASP.NET%20Core%20API%20and%20Backend%20Development",
+  "desc": "A staged move from an older .NET application to ASP.NET Core, without betting the business on a single rewrite.",
+  "lede": "Platform modernization. A staged move from an older .NET application to ASP.NET Core, without betting the business on a single rewrite."
+ },
+ {
+  "id": "document-portal",
+  "title": "Secure Document Management Portal",
+  "type": "Controlled document sharing",
+  "summary": "Folders, permissions, and an audit trail for sharing business documents with staff or external parties.",
+  "status": "concept",
+  "statusLabel": "Concept Project",
+  "categories": [
+   "enterprise",
+   "automation"
+  ],
+  "stack": [
+   "ASP.NET Core",
+   "Angular",
+   "SQL Server"
+  ],
+  "page": "projects/document-portal.html",
+  "layout": "doc",
+  "mockTitle": "Documents",
+  "accent": "teal",
+  "pageFromRoot": "projects/document-portal.html",
+  "need": "Email attachments and public links are a poor system of record. The company cannot easily say who opened a file, whether the link should still work, or which version is current.",
+  "approach": "The concept uses folders, explicit permissions, and expiring access where an outside party should not keep a permanent door. An audit trail records access. Storage can sit in a blob service. The application owns the rules.",
+  "functionality": [
+   "Folders and document versions",
+   "Permissions by person or role",
+   "Expiring access for external parties",
+   "An audit trail of views and changes"
+  ],
+  "tech": [
+   "ASP.NET Core",
+   "Angular",
+   "SQL Server",
+   "Blob storage",
+   "Authentication"
+  ],
+  "outcome": "This is a concept project. It describes a product Muhammad Saad can design and build. It is not a completed client engagement, and it does not represent a live system or a measured business result.",
+  "service": "Authentication%20and%20Application%20Security",
+  "desc": "A portal for sharing business documents with staff or external parties, with permissions and an audit trail.",
+  "lede": "Controlled document sharing. A portal for sharing business documents with staff or external parties, with permissions and an audit trail."
+ },
+ {
+  "id": "api-integration-hub",
+  "title": "REST API Integration and Automation Hub",
+  "type": "Integration operations",
+  "summary": "A place to see, run, and review integrations between business systems, including failures that need a person.",
+  "status": "concept",
+  "statusLabel": "Concept Project",
+  "categories": [
+   "apis",
+   "automation"
+  ],
+  "stack": [
+   "ASP.NET Core",
+   "Angular",
+   "SQL Server"
+  ],
+  "page": "projects/api-integration-hub.html",
+  "layout": "endpoints",
+  "mockTitle": "Integrations",
+  "accent": "cyan",
+  "pageFromRoot": "projects/api-integration-hub.html",
+  "need": "Integrations that only exist as scheduled scripts are invisible until a customer notices missing data. Nobody can say what last ran, what failed, or what is safe to retry.",
+  "approach": "The concept makes each integration a visible job: a connector, a run history, and an error queue. Credentials are stored with a deliberate pattern, not pasted into a screen. Retry is explicit.",
+  "functionality": [
+   "A catalog of integrations",
+   "Run history with success and failure",
+   "An error queue a person can act on",
+   "A credential pattern that is not a shared inbox password"
+  ],
+  "tech": [
+   "ASP.NET Core",
+   "Angular",
+   "SQL Server",
+   "REST APIs"
+  ],
+  "outcome": "This is a concept project. It describes a product Muhammad Saad can design and build. It is not a completed client engagement, and it does not represent a live system or a measured business result.",
+  "service": "ASP.NET%20Core%20API%20and%20Backend%20Development",
+  "desc": "A place to see, run, and review integrations between business systems, including the failures that need a person.",
+  "lede": "Integration operations. A place to see, run, and review integrations between business systems, including the failures that need a person."
+ },
+ {
+  "id": "multitenant-admin",
+  "title": "Multi-tenant SaaS Admin Console",
+  "type": "SaaS administration",
+  "summary": "An operator console for a product that serves many customer organizations, with tenant settings and isolated data access.",
+  "status": "concept",
+  "statusLabel": "Concept Project",
+  "categories": [
+   "saas",
+   "apis"
+  ],
+  "stack": [
+   "ASP.NET Core",
+   "Angular",
+   "SQL Server"
+  ],
+  "page": "projects/multitenant-admin.html",
+  "layout": "dashboard",
+  "mockTitle": "Tenants",
+  "accent": "violet",
+  "pageFromRoot": "projects/multitenant-admin.html",
+  "need": "A SaaS product gets its second customer and discovers that &#39;we will separate the data later&#39; is already a production risk. Operators also need a way to support a tenant without seeing every other tenant&#39;s records.",
+  "approach": "The concept treats the tenant as a boundary in the data model and in the admin tools. Invitations, settings, and plan flags are tenant-scoped. Support access is intentional and visible.",
+  "functionality": [
+   "Tenant records and settings",
+   "User invitations inside a tenant",
+   "Plan or feature flags per tenant",
+   "Operator tools that respect tenant isolation"
+  ],
+  "tech": [
+   "ASP.NET Core",
+   "Angular",
+   "SQL Server",
+   "Authentication"
+  ],
+  "outcome": "This is a concept project. It describes a product Muhammad Saad can design and build. It is not a completed client engagement, and it does not represent a live system or a measured business result.",
+  "service": "ASP.NET%20Core%20API%20and%20Backend%20Development",
+  "desc": "An operator console for a product that serves many customer organizations, with settings and data kept apart.",
+  "lede": "SaaS administration. An operator console for a product that serves many customer organizations, with settings and data kept apart."
+ },
+ {
+  "id": "payment-reconciliation",
+  "title": "Payment Reconciliation Workspace",
+  "type": "Finance operations",
+  "summary": "Matches provider payouts and statement lines to invoices, and leaves a clear queue for the exceptions finance still has to judge.",
+  "status": "concept",
+  "statusLabel": "Concept Project",
+  "categories": [
+   "analytics",
+   "apis"
+  ],
+  "stack": [
+   "ASP.NET Core",
+   "Angular",
+   "SQL Server"
+  ],
+  "page": "projects/payment-reconciliation.html",
+  "layout": "doc",
+  "mockTitle": "Reconcile",
+  "accent": "amber",
+  "pageFromRoot": "projects/payment-reconciliation.html",
+  "need": "Reconciliation in a spreadsheet hides the lines that did not match. Those are the lines that matter. A total that &#39;almost&#39; ties is not a closed month.",
+  "approach": "The concept imports source files, suggests matches, and leaves unmatched items in a queue. It does not pretend software should silently decide every exception. Export supports the close.",
+  "functionality": [
+   "Import of payout or statement lines",
+   "Suggested matches to invoices",
+   "A queue of exceptions for review",
+   "Export of the matched and unmatched sets"
+  ],
+  "tech": [
+   "ASP.NET Core",
+   "Angular",
+   "SQL Server"
+  ],
+  "outcome": "This is a concept project. It describes a product Muhammad Saad can design and build. It is not a completed client engagement, and it does not represent a live system or a measured business result.",
+  "service": "SQL%20Server%20and%20Database%20Optimization",
+  "desc": "A workspace that matches provider payouts and statement lines to invoices, and queues the exceptions finance still has to judge.",
+  "lede": "Finance operations. A workspace that matches provider payouts and statement lines to invoices, and queues the exceptions finance still has to judge."
+ }
+]

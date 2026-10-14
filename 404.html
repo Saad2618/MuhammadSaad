@@ -6,23 +6,17 @@
   <title>Page not found | Muhammad Saad</title>
   <meta name="description" content="This page is not on Muhammad Saad's site. Return home or send a project inquiry.">
   <meta name="robots" content="noindex">
-  <meta name="theme-color" content="#0B1020">
+  <meta name="theme-color" content="#080920">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/assets/css/styles.css">
   <script>
     (function () {
       try {
         var stored = localStorage.getItem("saad-theme");
-        var theme = stored === "light" || stored === "dark" ? stored : (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+        var theme = stored === "light" || stored === "dark" ? stored : "dark";
         document.documentElement.setAttribute("data-theme", theme);
       } catch (error) {
         document.documentElement.setAttribute("data-theme", "dark");
-      }
-      if (location.protocol === "http:" || location.protocol === "https:") {
-        var manifestLink = document.createElement("link");
-        manifestLink.rel = "manifest";
-        manifestLink.href = "/site.webmanifest";
-        document.head.appendChild(manifestLink);
       }
       document.documentElement.classList.add("js");
     })();

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CRM and Sales Pipeline | Muhammad Saad</title>
   <meta name="description" content="A pipeline where every lead has an owner, a stage, and a next action.">
-  <meta name="theme-color" content="#0B1020">
+  <meta name="theme-color" content="#080920">
   <link rel="canonical" href="https://muhammadsaad.dev/projects/crm-pipeline.html">
   <meta property="og:type" content="article">
   <meta property="og:title" content="CRM and Sales Pipeline | Muhammad Saad">
@@ -22,7 +22,7 @@
     (function () {
       try {
         var stored = localStorage.getItem("saad-theme");
-        var theme = stored === "light" || stored === "dark" ? stored : (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+        var theme = stored === "light" || stored === "dark" ? stored : "dark";
         document.documentElement.setAttribute("data-theme", theme);
       } catch (error) {
         document.documentElement.setAttribute("data-theme", "dark");
@@ -30,7 +30,7 @@
       if (location.protocol === "http:" || location.protocol === "https:") {
         var manifestLink = document.createElement("link");
         manifestLink.rel = "manifest";
-        manifestLink.href = /\/projects\//.test(location.pathname) ? "../site.webmanifest" : "site.webmanifest";
+        manifestLink.href = "../site.webmanifest";
         document.head.appendChild(manifestLink);
       }
       document.documentElement.classList.add("js");
@@ -40,21 +40,11 @@
   {
     "@context": "https://schema.org",
     "@graph": [
-      {
-        "@type": "WebPage",
-        "name": "CRM and Sales Pipeline",
-        "description": "A pipeline where every lead has an owner, a stage, and a next action.",
-        "url": "https://muhammadsaad.dev/projects/crm-pipeline.html",
-        "author": { "@type": "Person", "name": "Muhammad Saad", "url": "https://muhammadsaad.dev/" }
-      },
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://muhammadsaad.dev/" },
-          { "@type": "ListItem", "position": 2, "name": "Projects", "item": "https://muhammadsaad.dev/#projects" },
-          { "@type": "ListItem", "position": 3, "name": "CRM and Sales Pipeline", "item": "https://muhammadsaad.dev/projects/crm-pipeline.html" }
-        ]
-      }
+      { "@type": "WebPage", "name": "CRM and Sales Pipeline", "description": "A pipeline where every lead has an owner, a stage, and a next action.", "url": "https://muhammadsaad.dev/projects/crm-pipeline.html", "author": { "@type": "Person", "name": "Muhammad Saad", "url": "https://muhammadsaad.dev/" } },
+      { "@type": "BreadcrumbList", "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://muhammadsaad.dev/" },
+        { "@type": "ListItem", "position": 2, "name": "Projects", "item": "https://muhammadsaad.dev/#projects" },
+        { "@type": "ListItem", "position": 3, "name": "CRM and Sales Pipeline", "item": "https://muhammadsaad.dev/projects/crm-pipeline.html" } ] }
     ]
   }
   </script>
@@ -98,26 +88,18 @@
     <article class="wrap case">
       <header class="page-intro">
         <p class="crumbs"><a href="../index.html#home">Home</a> / <a href="../index.html#projects">Projects</a> / CRM and Sales Pipeline</p>
-        <p class="badge">Concept Project</p>
+        <p class="badge-row"><span class="badge badge--concept">Concept Project</span><span class="badge">SaaS</span></p>
         <h1>CRM and Sales Pipeline</h1>
         <p class="lede">Sales operations. A pipeline where every lead has an owner, a stage, and a next action.</p>
       </header>
       <div id="case-visual" data-project-id="crm-pipeline"></div>
       <div class="case-grid">
-        <section class="case-block"><h2>Business need</h2><p>Early-stage sales teams outgrow a spreadsheet when two people update the same deal and nobody can tell which forecast is real. The failure is operational, not a lack of charts.</p></section>
-        <section class="case-block"><h2>Technical approach</h2><p>The concept is a small CRM with a board, a lead record, and an activity trail. Forecasting stays simple enough that a manager can see the pipeline without a separate analytics project.</p></section>
-        <section class="case-block"><h2>Key functionality</h2><ul>
-            <li>Stages from new lead to won or lost</li>
-            <li>An owner and a next action on each record</li>
-            <li>Activity notes kept with the deal</li>
-            <li>A straightforward view of what is in each stage</li>
-          </ul></section>
-        <section class="case-block"><h2>Suggested technologies</h2><ul class="pills">
-            <li>ASP.NET Core</li>
-            <li>Angular</li>
-            <li>SQL Server</li>
-          </ul></section>
+        <section class="case-block"><h2>The problem</h2><p>Early-stage sales teams outgrow a spreadsheet when two people update the same deal and nobody can tell which forecast is real. The failure is operational, not a lack of charts.</p></section>
+        <section class="case-block"><h2>The solution</h2><p>The concept is a small CRM with a board, a lead record, and an activity trail. Forecasting stays simple enough that a manager can see the pipeline without a separate analytics project.</p></section>
+        <section class="case-block"><h2>Key features</h2><ul><li>Stages from new lead to won or lost</li><li>An owner and a next action on each record</li><li>Activity notes kept with the deal</li><li>A straightforward view of what is in each stage</li></ul></section>
+        <section class="case-block case-block--value"><h2>Value this kind of system is built to deliver</h2><p>Every lead has a stage and a next action, so follow-ups do not slip.</p><h3>Strengths this project shows</h3><ul class="pills"><li>Cloud</li><li>System integration</li><li>Database design</li></ul></section>
       </div>
+      <section class="case-block case-block--wide"><h2>Proposed architecture</h2><p class="arch-note">How this concept would be built. It is a design sketch, not a description of a live system.</p><ol class="arch"><li><span class="arch__tag">Interface</span><span>Angular</span></li><li><span class="arch__tag">API and logic</span><span>ASP.NET Core</span></li><li><span class="arch__tag">Data</span><span>SQL Server</span></li></ol></section>
       <section class="case-block" style="margin-top:1rem"><h2>Status</h2><p>This is a concept project. It describes a product Muhammad Saad can design and build. It is not a completed client engagement, and it does not represent a live system or a measured business result.</p></section>
       <div class="cta-band">
         <div>
@@ -129,7 +111,7 @@
       <nav class="pager" aria-label="Other projects"><a class="text-link" href="saas-billing.html">Previous: SaaS Subscription and Billing Dashboard</a><a class="text-link" href="inventory-warehouse.html">Next: Inventory and Warehouse Management</a></nav>
     </article>
   </main>
-  <footer class="site-footer">
+    <footer class="site-footer">
     <div class="wrap footer-grid">
       <div>
         <a class="brand" href="../index.html#home"><img src="../assets/logo/logo-icon.svg" width="36" height="36" alt=""><span class="brand__name">Muhammad Saad</span></a>
@@ -165,7 +147,7 @@
           <li><a href="tel:+966597899079">+966 59 789 9079</a></li>
           <li><a href="https://wa.me/966597899079" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
           <li><a href="https://www.linkedin.com/in/muhammad-saad-421217175/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-          <li id="github-slot">GitHub profile link forthcoming</li>
+          <li id="github-slot"><a href="https://github.com/Saad2618" target="_blank" rel="noopener noreferrer">GitHub</a></li>
         </ul>
       </div>
     </div>

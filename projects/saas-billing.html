@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SaaS Subscription and Billing Dashboard | Muhammad Saad</title>
   <meta name="description" content="Plans, subscriptions, invoices, and account status for a software product that bills on a recurring schedule.">
-  <meta name="theme-color" content="#0B1020">
+  <meta name="theme-color" content="#080920">
   <link rel="canonical" href="https://muhammadsaad.dev/projects/saas-billing.html">
   <meta property="og:type" content="article">
   <meta property="og:title" content="SaaS Subscription and Billing Dashboard | Muhammad Saad">
@@ -22,7 +22,7 @@
     (function () {
       try {
         var stored = localStorage.getItem("saad-theme");
-        var theme = stored === "light" || stored === "dark" ? stored : (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+        var theme = stored === "light" || stored === "dark" ? stored : "dark";
         document.documentElement.setAttribute("data-theme", theme);
       } catch (error) {
         document.documentElement.setAttribute("data-theme", "dark");
@@ -30,7 +30,7 @@
       if (location.protocol === "http:" || location.protocol === "https:") {
         var manifestLink = document.createElement("link");
         manifestLink.rel = "manifest";
-        manifestLink.href = /\/projects\//.test(location.pathname) ? "../site.webmanifest" : "site.webmanifest";
+        manifestLink.href = "../site.webmanifest";
         document.head.appendChild(manifestLink);
       }
       document.documentElement.classList.add("js");
@@ -40,21 +40,11 @@
   {
     "@context": "https://schema.org",
     "@graph": [
-      {
-        "@type": "WebPage",
-        "name": "SaaS Subscription and Billing Dashboard",
-        "description": "Plans, subscriptions, invoices, and account status for a software product that bills on a recurring schedule.",
-        "url": "https://muhammadsaad.dev/projects/saas-billing.html",
-        "author": { "@type": "Person", "name": "Muhammad Saad", "url": "https://muhammadsaad.dev/" }
-      },
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://muhammadsaad.dev/" },
-          { "@type": "ListItem", "position": 2, "name": "Projects", "item": "https://muhammadsaad.dev/#projects" },
-          { "@type": "ListItem", "position": 3, "name": "SaaS Subscription and Billing Dashboard", "item": "https://muhammadsaad.dev/projects/saas-billing.html" }
-        ]
-      }
+      { "@type": "WebPage", "name": "SaaS Subscription and Billing Dashboard", "description": "Plans, subscriptions, invoices, and account status for a software product that bills on a recurring schedule.", "url": "https://muhammadsaad.dev/projects/saas-billing.html", "author": { "@type": "Person", "name": "Muhammad Saad", "url": "https://muhammadsaad.dev/" } },
+      { "@type": "BreadcrumbList", "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://muhammadsaad.dev/" },
+        { "@type": "ListItem", "position": 2, "name": "Projects", "item": "https://muhammadsaad.dev/#projects" },
+        { "@type": "ListItem", "position": 3, "name": "SaaS Subscription and Billing Dashboard", "item": "https://muhammadsaad.dev/projects/saas-billing.html" } ] }
     ]
   }
   </script>
@@ -98,27 +88,18 @@
     <article class="wrap case">
       <header class="page-intro">
         <p class="crumbs"><a href="../index.html#home">Home</a> / <a href="../index.html#projects">Projects</a> / SaaS Subscription and Billing Dashboard</p>
-        <p class="badge">Concept Project</p>
+        <p class="badge-row"><span class="badge badge--concept">Concept Project</span><span class="badge">SaaS</span></p>
         <h1>SaaS Subscription and Billing Dashboard</h1>
         <p class="lede">Subscription operations. Plans, subscriptions, invoices, and account status for a software product that bills on a recurring schedule.</p>
       </header>
       <div id="case-visual" data-project-id="saas-billing"></div>
       <div class="case-grid">
-        <section class="case-block"><h2>Business need</h2><p>Subscription state that lives only inside a payment provider is hard for support and finance to explain. Someone asks why an account is past due, and the answer requires three logins.</p></section>
-        <section class="case-block"><h2>Technical approach</h2><p>The concept gives the company its own operational view: which plan a customer is on, what was invoiced, and what the payment status is. The payment provider remains the processor. This product is the place the team works.</p></section>
-        <section class="case-block"><h2>Key functionality</h2><ul>
-            <li>Plans and customer subscriptions</li>
-            <li>Invoice history and payment status</li>
-            <li>A clear past-due state for support</li>
-            <li>An admin path that does not require opening the processor for every question</li>
-          </ul></section>
-        <section class="case-block"><h2>Suggested technologies</h2><ul class="pills">
-            <li>ASP.NET Core</li>
-            <li>Angular</li>
-            <li>SQL Server</li>
-            <li>Payment provider integration</li>
-          </ul></section>
+        <section class="case-block"><h2>The problem</h2><p>Subscription state that lives only inside a payment provider is hard for support and finance to explain. Someone asks why an account is past due, and the answer requires three logins.</p></section>
+        <section class="case-block"><h2>The solution</h2><p>The concept gives the company its own operational view: which plan a customer is on, what was invoiced, and what the payment status is. The payment provider remains the processor. This product is the place the team works.</p></section>
+        <section class="case-block"><h2>Key features</h2><ul><li>Plans and customer subscriptions</li><li>Invoice history and payment status</li><li>A clear past-due state for support</li><li>An admin path that does not require opening the processor for every question</li></ul></section>
+        <section class="case-block case-block--value"><h2>Value this kind of system is built to deliver</h2><p>Plans, invoices, and subscription status visible in one place.</p><h3>Strengths this project shows</h3><ul class="pills"><li>Cloud</li><li>Database design</li></ul></section>
       </div>
+      <section class="case-block case-block--wide"><h2>Proposed architecture</h2><p class="arch-note">How this concept would be built. It is a design sketch, not a description of a live system.</p><ol class="arch"><li><span class="arch__tag">Interface</span><span>Angular</span></li><li><span class="arch__tag">API and logic</span><span>ASP.NET Core</span></li><li><span class="arch__tag">Data</span><span>SQL Server</span></li><li><span class="arch__tag">Platform and services</span><span>Payment provider integration</span></li></ol></section>
       <section class="case-block" style="margin-top:1rem"><h2>Status</h2><p>This is a concept project. It describes a product Muhammad Saad can design and build. It is not a completed client engagement, and it does not represent a live system or a measured business result.</p></section>
       <div class="cta-band">
         <div>
@@ -127,10 +108,10 @@
         </div>
         <a class="btn btn-primary" href="../index.html?service=Custom%20Web%20Application%20Development#contact">Get a Free Quote</a>
       </div>
-      <nav class="pager" aria-label="Other projects"><a class="text-link" href="ai-document-processing.html">Previous: AI Document Processing and Data Extraction</a><a class="text-link" href="crm-pipeline.html">Next: CRM and Sales Pipeline</a></nav>
+      <nav class="pager" aria-label="Other projects"><a class="text-link" href="agency-client-portal.html">Previous: Client Delivery Portal for Agencies</a><a class="text-link" href="crm-pipeline.html">Next: CRM and Sales Pipeline</a></nav>
     </article>
   </main>
-  <footer class="site-footer">
+    <footer class="site-footer">
     <div class="wrap footer-grid">
       <div>
         <a class="brand" href="../index.html#home"><img src="../assets/logo/logo-icon.svg" width="36" height="36" alt=""><span class="brand__name">Muhammad Saad</span></a>
@@ -166,7 +147,7 @@
           <li><a href="tel:+966597899079">+966 59 789 9079</a></li>
           <li><a href="https://wa.me/966597899079" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
           <li><a href="https://www.linkedin.com/in/muhammad-saad-421217175/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-          <li id="github-slot">GitHub profile link forthcoming</li>
+          <li id="github-slot"><a href="https://github.com/Saad2618" target="_blank" rel="noopener noreferrer">GitHub</a></li>
         </ul>
       </div>
     </div>

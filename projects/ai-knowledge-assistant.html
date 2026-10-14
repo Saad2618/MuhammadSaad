@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AI-Powered Business Knowledge Assistant | Muhammad Saad</title>
   <meta name="description" content="A private assistant over a company&#39;s approved documents, so staff can ask a question and see which source the answer came from.">
-  <meta name="theme-color" content="#0B1020">
+  <meta name="theme-color" content="#080920">
   <link rel="canonical" href="https://muhammadsaad.dev/projects/ai-knowledge-assistant.html">
   <meta property="og:type" content="article">
   <meta property="og:title" content="AI-Powered Business Knowledge Assistant | Muhammad Saad">
@@ -22,7 +22,7 @@
     (function () {
       try {
         var stored = localStorage.getItem("saad-theme");
-        var theme = stored === "light" || stored === "dark" ? stored : (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+        var theme = stored === "light" || stored === "dark" ? stored : "dark";
         document.documentElement.setAttribute("data-theme", theme);
       } catch (error) {
         document.documentElement.setAttribute("data-theme", "dark");
@@ -30,7 +30,7 @@
       if (location.protocol === "http:" || location.protocol === "https:") {
         var manifestLink = document.createElement("link");
         manifestLink.rel = "manifest";
-        manifestLink.href = /\/projects\//.test(location.pathname) ? "../site.webmanifest" : "site.webmanifest";
+        manifestLink.href = "../site.webmanifest";
         document.head.appendChild(manifestLink);
       }
       document.documentElement.classList.add("js");
@@ -40,21 +40,11 @@
   {
     "@context": "https://schema.org",
     "@graph": [
-      {
-        "@type": "WebPage",
-        "name": "AI-Powered Business Knowledge Assistant",
-        "description": "A private assistant over a company&#39;s approved documents, so staff can ask a question and see which source the answer came from.",
-        "url": "https://muhammadsaad.dev/projects/ai-knowledge-assistant.html",
-        "author": { "@type": "Person", "name": "Muhammad Saad", "url": "https://muhammadsaad.dev/" }
-      },
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://muhammadsaad.dev/" },
-          { "@type": "ListItem", "position": 2, "name": "Projects", "item": "https://muhammadsaad.dev/#projects" },
-          { "@type": "ListItem", "position": 3, "name": "AI-Powered Business Knowledge Assistant", "item": "https://muhammadsaad.dev/projects/ai-knowledge-assistant.html" }
-        ]
-      }
+      { "@type": "WebPage", "name": "AI-Powered Business Knowledge Assistant", "description": "A private assistant over a company&#39;s approved documents, so staff can ask a question and see which source the answer came from.", "url": "https://muhammadsaad.dev/projects/ai-knowledge-assistant.html", "author": { "@type": "Person", "name": "Muhammad Saad", "url": "https://muhammadsaad.dev/" } },
+      { "@type": "BreadcrumbList", "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://muhammadsaad.dev/" },
+        { "@type": "ListItem", "position": 2, "name": "Projects", "item": "https://muhammadsaad.dev/#projects" },
+        { "@type": "ListItem", "position": 3, "name": "AI-Powered Business Knowledge Assistant", "item": "https://muhammadsaad.dev/projects/ai-knowledge-assistant.html" } ] }
     ]
   }
   </script>
@@ -98,28 +88,18 @@
     <article class="wrap case">
       <header class="page-intro">
         <p class="crumbs"><a href="../index.html#home">Home</a> / <a href="../index.html#projects">Projects</a> / AI-Powered Business Knowledge Assistant</p>
-        <p class="badge">Concept Project</p>
+        <p class="badge-row"><span class="badge badge--concept">Concept Project</span><span class="badge">AI Integration</span></p>
         <h1>AI-Powered Business Knowledge Assistant</h1>
         <p class="lede">Internal knowledge assistant. A private assistant over a company&#39;s approved documents, so staff can ask a question and see which source the answer came from.</p>
       </header>
       <div id="case-visual" data-project-id="ai-knowledge-assistant"></div>
       <div class="case-grid">
-        <section class="case-block"><h2>Business need</h2><p>Policies and procedures exist, but people still interrupt colleagues because search in a shared drive does not answer a specific question. An ungrounded chatbot makes that worse by sounding sure when it is guessing.</p></section>
-        <section class="case-block"><h2>Technical approach</h2><p>The concept limits the assistant to approved sources, shows those sources next to the answer, and keeps access aligned with the permissions the business already uses. A person remains responsible for publishing or retiring a source.</p></section>
-        <section class="case-block"><h2>Key functionality</h2><ul>
-            <li>Questions answered only from approved material</li>
-            <li>Source references beside each answer</li>
-            <li>Access control consistent with document permissions</li>
-            <li>An admin view for what the assistant is allowed to read</li>
-          </ul></section>
-        <section class="case-block"><h2>Suggested technologies</h2><ul class="pills">
-            <li>ASP.NET Core</li>
-            <li>Angular</li>
-            <li>SQL Server</li>
-            <li>Document storage</li>
-            <li>Hosted language-model API</li>
-          </ul></section>
+        <section class="case-block"><h2>The problem</h2><p>Policies and procedures exist, but people still interrupt colleagues because search in a shared drive does not answer a specific question. An ungrounded chatbot makes that worse by sounding sure when it is guessing.</p></section>
+        <section class="case-block"><h2>The solution</h2><p>The concept limits the assistant to approved sources, shows those sources next to the answer, and keeps access aligned with the permissions the business already uses. A person remains responsible for publishing or retiring a source.</p></section>
+        <section class="case-block"><h2>Key features</h2><ul><li>Questions answered only from approved material</li><li>Source references beside each answer</li><li>Access control consistent with document permissions</li><li>An admin view for what the assistant is allowed to read</li></ul></section>
+        <section class="case-block case-block--value"><h2>Value this kind of system is built to deliver</h2><p>Faster answers to routine questions, with the source shown so people can verify.</p><h3>Strengths this project shows</h3><ul class="pills"><li>AI implementation</li><li>System integration</li><li>Database design</li></ul></section>
       </div>
+      <section class="case-block case-block--wide"><h2>Proposed architecture</h2><p class="arch-note">How this concept would be built. It is a design sketch, not a description of a live system.</p><ol class="arch"><li><span class="arch__tag">Interface</span><span>Angular</span></li><li><span class="arch__tag">API and logic</span><span>ASP.NET Core</span></li><li><span class="arch__tag">Data</span><span>SQL Server, Document storage</span></li><li><span class="arch__tag">Platform and services</span><span>Hosted language-model API</span></li></ol></section>
       <section class="case-block" style="margin-top:1rem"><h2>Status</h2><p>This is a concept project. It describes a product Muhammad Saad can design and build. It is not a completed client engagement, and it does not represent a live system or a measured business result.</p></section>
       <div class="cta-band">
         <div>
@@ -131,7 +111,7 @@
       <nav class="pager" aria-label="Other projects"><a class="text-link" href="integrityweb.html">Previous: IntegrityWeb</a><a class="text-link" href="ai-document-processing.html">Next: AI Document Processing and Data Extraction</a></nav>
     </article>
   </main>
-  <footer class="site-footer">
+    <footer class="site-footer">
     <div class="wrap footer-grid">
       <div>
         <a class="brand" href="../index.html#home"><img src="../assets/logo/logo-icon.svg" width="36" height="36" alt=""><span class="brand__name">Muhammad Saad</span></a>
@@ -167,7 +147,7 @@
           <li><a href="tel:+966597899079">+966 59 789 9079</a></li>
           <li><a href="https://wa.me/966597899079" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
           <li><a href="https://www.linkedin.com/in/muhammad-saad-421217175/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-          <li id="github-slot">GitHub profile link forthcoming</li>
+          <li id="github-slot"><a href="https://github.com/Saad2618" target="_blank" rel="noopener noreferrer">GitHub</a></li>
         </ul>
       </div>
     </div>

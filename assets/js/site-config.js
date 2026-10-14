@@ -14,7 +14,7 @@ window.SITE_CONFIG = {
     phoneE164: "+966597899079",
     whatsapp: "https://wa.me/966597899079",
     linkedin: "https://www.linkedin.com/in/muhammad-saad-421217175/",
-    github: ""
+    github: "https://github.com/Saad2618"
   },
   location: "Riyadh, Saudi Arabia",
   languages: ["English", "Urdu"],
@@ -31,7 +31,6 @@ window.SITE_CONFIG = {
       retainer: "[Add monthly rate]"
     }
   },
-  testimonials: [],
   analytics: {
     enabled: false
   }
