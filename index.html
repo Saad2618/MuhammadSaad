@@ -38,7 +38,7 @@
       } catch (error) {
         document.documentElement.setAttribute("data-theme", "dark");
       }
-      document.documentElement.classList.add("js");
+      document.documentElement.classList.add("js", "slider-on");
     })();
   </script>
   <script type="application/ld+json">
@@ -357,7 +357,7 @@
       </div>
     </section>
 
-    <section class="banner-strip" aria-labelledby="banner-title">
+    <section class="banner-strip" id="tagline" aria-labelledby="banner-title">
       <div class="banner-strip__art" aria-hidden="true"><img src="assets/images/hero-banner.svg" alt="" width="1920" height="1000" loading="lazy"></div>
       <div class="wrap">
         <p class="kicker">Riyadh, Saudi Arabia</p>
@@ -401,7 +401,7 @@
       </div>
     </section>
 
-    <section class="banner-strip banner-strip--global" aria-labelledby="global-title">
+    <section class="banner-strip banner-strip--global" id="global" aria-labelledby="global-title">
       <div class="banner-strip__art" aria-hidden="true"><img src="assets/images/banner-global.svg" alt="" width="1920" height="640" loading="lazy"></div>
       <div class="wrap">
         <div class="banner-card">
@@ -477,7 +477,7 @@
       </div>
     </section>
 
-    <section class="cta-banner" aria-labelledby="cta-title">
+    <section class="cta-banner" id="start" aria-labelledby="cta-title">
       <div class="cta-banner__art" aria-hidden="true"><img src="assets/images/banner-cta.svg" alt="" width="1920" height="560" loading="lazy"></div>
       <div class="wrap cta-banner__inner">
         <div>
@@ -663,5 +663,6 @@
   <script src="assets/js/theme.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/contact.js"></script>
+  <script src="assets/js/slider.js"></script>
 </body>
 </html>

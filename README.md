@@ -116,6 +116,21 @@ All banner images are generated SVGs, so they stay sharp on any screen and weigh
 
 To change banner colors, edit `PALETTES` in `tools/make_banners.py`; to change a project's artwork, edit its drawer in `tools/visuals.py`. Run `python3 tools/build_site.py` afterwards. The banners are illustrations, not screenshots of client systems.
 
+### Horizontal slide navigation (home page)
+
+The home page works like a row of phone-style screens. Each section is one slide, and moving between slides slides the whole row left or right.
+
+- **Clicking** any menu item or in-page button slides to that section (forward slides in from the right, backward from the left).
+- **Swipe** left or right on a touch screen. The slides follow your finger, then snap.
+- **Keyboard:** left and right arrow keys. **Trackpad:** two-finger sideways scroll.
+- **Bottom bar:** previous and next buttons plus one dot per slide. A thin gradient bar under the header shows progress.
+- **Direct links** such as `index.html#services` or `?service=...#contact` open the right slide, and the browser Back button moves to the previous slide.
+- Projects and Services cards also slide sideways. On phones, the card groups in other sections become swipeable rows.
+- A slide taller than the screen scrolls vertically inside itself, so nothing is cut off.
+- If someone prefers reduced motion, the slides change instantly.
+
+The code is `assets/js/slider.js` and the last section of `assets/css/styles.css`. To go back to a normal long page, remove `"slider-on"` from the inline script at the top of `index.html`. Case study pages are normal pages.
+
 ## Brand files
 
 | File | Use |

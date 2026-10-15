@@ -70,7 +70,8 @@
       return document.querySelector(link.getAttribute("href"));
     }).filter(Boolean);
 
-    if (links.length && sections.length && "IntersectionObserver" in window) {
+    var sliderMode = document.documentElement.classList.contains("slider-on");
+    if (!sliderMode && links.length && sections.length && "IntersectionObserver" in window) {
       var active = null;
       var observer = new IntersectionObserver(function (entries) {
         entries.forEach(function (entry) {
@@ -144,7 +145,7 @@
 
     var reveals = document.querySelectorAll(".reveal");
     var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (reduce || !("IntersectionObserver" in window)) {
+    if (sliderMode || reduce || !("IntersectionObserver" in window)) {
       reveals.forEach(function (node) { node.classList.add("is-in"); });
     } else {
       var revealObserver = new IntersectionObserver(function (entries) {
@@ -159,7 +160,7 @@
     }
 
     var toTop = document.querySelector(".to-top");
-    if (toTop) {
+    if (toTop && !sliderMode) {
       var onScroll = function () {
         toTop.hidden = window.scrollY < 500;
       };
